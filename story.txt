@@ -1,1 +1,30 @@
 Where Is My Owner?
+
+Day 1
+Alley 
+- you wake up from your sleep and you are wondering what are you doing there. then, you recall what happened yesterday. your owner, Emily, brought you to the park nearby to play catch.
+- she threw your toy far away and let you ran after it. however, when you came back, she is gone. where could she be? surely, she just forgotten to bring you with her, right?
+- today, you decide to find your way home and reunite with Emily.
+- you go through the trash can and found a half-eaten burger. Do you eat it? Yes or No (there is no consequences for this one as it is a tutorial)
+- (Yes) you enjoy the food...kinda
+- (No) you are not used to eating something straight out of trash can. you decide to starve yourself
+- before starting your adventure, you also found a coin. take it or leave it?
+- (take) you bring the coin with you
+- (leave) you walk away empty-handed
+- you walk out of the alleyway into the busy city. as you walk, you see an old man who is a street performance. as you listen to his music, you cant help but recall the memory of Emily humming the same song as she prepared your food
+- (if take the coin) you stay to listen to his performance, you walk toward him. Do you give him the coin?
+- (give) he is very happy to see a feline offers him a coin. he pats you and you are very happy.
+- (dont give) he is still happy to see you enjoy his performance
+- you run around and see a strange alleyway. you enter the alleyway in hope to find shelter for the night and maybe some more food. As you are busy rummaging through the trash can, you hear a growl from behind you. it was a Siamese cat with scars all over his body.
+- then in the shadow, you see more cats surrounding you in that alleyway. apparently, you have trespassed their boundary. the cats are very angry and the Siamese ask you for a duel. accept or negotiate
+- (accept) -1 life but you win. the stray cats accept their defeat and will listen to your request. you want them to help you find clues to reunite with Emily.
+- (negotiate) You beg them for mercy and negotiate. they agree to help you only for an exchange.
+- they will help you but you must promise to not interact with a certain black cat who had betrayed their gang. (if you choose to negotiate) you also need to bring them food every day until they manage to get some information about your owner.
+- you agree and walk away. 
+- you encounter a man. he has a soft expression. when he sees you, he smiles happily and offer you food. you sense something a little...strange in him. accept or not accept the food?
+- (accept) +1 life. he has a beaming smile plastered on his face.
+- (dont accept) the strange feeling in you build up and you hiss at him. then you run away.
+- after some time, you finally found the best place to rest. it is cramped but at least it is warm enough for you to survive the cold, snowy night.
+- as you are about to fall asleep, you are bothered by a meow. a black cat comes to you to seek shelter. share the shelter or ignore him
+- (share) he is grateful but -1 life for you cuz it was cramped and you barely survive the cold night cuz your legs were sticking out from the shelter during the night
+- (ignore) he walks away.
