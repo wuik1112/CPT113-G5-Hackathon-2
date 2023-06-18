@@ -28,3 +28,120 @@ Alley
 - as you are about to fall asleep, you are bothered by a meow. a black cat comes to you to seek shelter. share the shelter or ignore him
 - (share) he is grateful but -1 life for you cuz it was cramped and you barely survive the cold night cuz your legs were sticking out from the shelter during the night
 - (ignore) he walks away.
+
+(If you choose to negotiate and ignore black cat)
+Day 2
+-You wake up to see the black cat is nowhere to be found. Good. You've to focus on finding Emily afterall
+You are rummaging through the trash can. How lucky, you found another coin. Take or leave it
+-(Take) you bring the coin with you
+-(Leave) you walk away empty handed
+You see the old man again. Today too, the music he plays bring back old memories.
+-(If you choose take) you walk to him. Give him the coin or not
+-(Give) he is very happy and today, he gives you some food. +1 life
+-(Don't) he pat you on the head
+-You stroll around and see the kind man again. Today, something is really suspicious with him. He is smiling but it seems like he's also holding back some kind of anger? Hatred? You're unsure of it.
+-he gives you food. Take it or leave it?
+-(Take) you keep the food in your mouth. You did not eat it
+-(Leave) You just dislike this man. You hiss at him.
+-(If you choose take) You go all the way to the strange alley in hope for some update on Emily's whereabout. You greets the cats there and give the food to them. They're happy
+however, they still need some times to find clues. You're a bit disappointed and walk away.
+-(If you choose to leave) you go all the way to strange alley in hope for some update on Emily's whereabout. You greet them but they don't seem too happy. Did you forget about something? Uh oh. The food. You forgot the food. -2 lives. You should be happy you're alive and this is your final warning.
+-You find some shelter to rest that night. But somehow today, you feel so uneasy. I wonder why?
+
+Day 3
+-you wake up yet to another day in an unfamiliar alley. -You are tired and just want to go home. Do you rummage through the trash can again?
+-(Yes) you found nothing
+-(No) you walk away
+-Today too, the beautiful sound of music is entering your ears. You listen to the song. But this time, from afar since you've no offering to give the sweet old man.
+-you meet the kind man again. He seems to be throwing a sack of something. What could it be? Hm. You don't bother too much and walk towards him.
+he sees you and greets you happily. As usual, he gives you some food. Accept?
+-(Yes) you only nibble a bit on the food. You keep the rest. +1 life
+-(No) you sure dislike this man huh?
+-You go to the strange alleyway again. Before you could greet them, they happily invite you in with such honor. "Good job!" You're confused.
+-they told you that you're a wonderful hitman. What? You don't understand. But you're happy that they're in a good mood.
+-(if you take food from kind man)So about the food? Give them food?
+-(Yes) they're happy
+-(No) -3 lives. You were warned
+-(If you didn't take the food from kind man) they realised you didn't bring any food. -3 lives. You were warned.
+-they gave you a card. You take it 
+-on the card, there's Emily's face on it. That's all you understand. You're a cat. You cannot read.
+-but you're happy anyways. This marks the end of your business with the stray cats. -You go find a place to rest that night
+
+Day 4
+-You're woken up by some weird smell. Investigate or not?
+-(Investigate) you found out the smell coming from a sack. Wait. Isn't this the sack that the kind man thrown away yesterday? There are some liquid dripping from it. You try to open the sack with your mouth and tiny paw.
+what you saw shocked you. It's unbelievable. What is happening? Inside the sack is black furs covering in blood. It was... The black cat. All his body parts are cut into pieces. His guts are being pulled out. Why? Why?
+you recall the night you first met him. Is this...your fault? Is it really? But how? Who killed him? The kind man? Why? Was your gut feelings true? To not trust that man?
+-guilt overpower you. You don't know what to do anymore. Suddenly, you remember the old man. You must go to him... You must seek help
+-you run toward the sound of music. There you see the old man happily play his instrument. You cry and cry to him. You pull the fabric on his legs ever so gently to make sure you don't hurt him. He sense the urgency and follow you
+-you showed him the corpse of the black cat. He is as shocked as you. He takes out his phone, and call the police. As the police arrives, they confirm that they have gotten a lot of report regarding of crimes against black cats in that area. 
+-the old man sigh and ask you if you know anything. you remember about the kind man. Tell the old man or not?
+-(Tell) you meow to the old man to follow you. You lead to the place the kind man always hanging out. You see the man. You're about to rush at him and scratch him so hard that he would bleed to death. The old man tries his best to chase after you despite being left behind. But before you could do anything, the kind man catches you. He smiles at you
+-"You again little kitty. Y'know you should be lucky you're born with this pretty golden fur. It's a sign of wealth. Not like those dumb black cats. They only bring bad luck toward us. Don't you agree?" You scratch him or hiss at him
+-(Scratch) you scratch him. He throws you to the wall. -1 life.
+-(Hiss) it does not do anything
+-"I heard you. I hear everything" the old man said. "How could you? What the little cats do to you?" "Huh??? Do I need to explain that, stupid old man??? Don't you see? I am saving us all from the bad fortune about to fall upon us! " Before they both could do anything the police also catch up to us
+-The old man told the police everything and the man is arrested. The man cuss out words to all of us and all we could do is watch.
+-(If you choose to not tell the old man you'll skip everything and go to this scene. If you choose to tell you'll only get this scene once the man is arrested)Today is tiring. You did not expect all that at all. You could not believe the world that you live in is so cruel. The old man pat you. This place is too dangerous. He offers to bring you home. Accept or not accept?
+-(Accept) (same ending as first one but without black cat)
+-(Not accept) you run away.
+
+Day 5 (if you choose not accept)
+-You wake up again. This time in different alley. You are too traumatized from yesterday event. You are about to go find food. You look back and saw the card. Oh yea. You forgot to find Emily yesterday. You take the card with you.
+-you see the old man again. Do you give the card to him?
+-(Yes) he looks at it and immediately understand. He knows you want to meet the person on the card. After he's done performing he packs up. Then, he carries you all the way to your old home. The more he walks, the familiar the scenery. The pet shop that Emily went to, the scary vet clinic and the street that Emily always use to walk with you. This sense of nostalgia. You love it. "Here we are" 
+-The old man tried to knock on the door but nobody answer. You didn't bother too much because Emily is the type of person who doesn't want to answer the door to unknown person bc she doesn't want to deal with salesman.
+-But, you know that there's a window that Emily always left open for you to come in and out whenever you want. You go to the window. Surely enough, the window is open. You get inside and the it is silent. Too silent... You walk around the house to find Emily. You go to the living room and see a paper on the table. Read it or don't read it?
+-(Read) you've no idea what's written
+"Dear mom, dad or anyone who read this. I am sorry for everything. I try my best but I keep failing. I am sorry I am sorry. Maybe what you said is true. I am such a failure of a child. Please forget about me."
+-(Don't read) ehh you can't read anyways so why bother?
+-Where are you going next? Bathroom or bedroom
+-(Bedroom) you see all the clothes lying around the room, the dozens of empty cans and bottles of water. Emily is always a messy person. But you don't mind. The more mess in this room the better. You get to explore this room everytime and find bugs to kill
+-(Bathroom) you hate this place the most. But once you enter, you see Emily, lying on the floor. Why is she sleeping here? You walk toward her and you see the pool of blood under her right hand. On her hand, there are a few deep scratch marks. You don't remember giving this scar on her. Also, even though you scratch her at times, but you'll never scratch this deep. Huh. You meow at her and she didn't reply. She just lies there. Lifeless. Lifeless? No way. No. It can't be. You try over and over again to wake her up but to no avail.
+-you finally come to the conclusion and acceptance that Emily is no longer in this world. But you don't dare to leave her alone like that. After leaving her behind for so long now you have to part ways again? No way. You stay by her side. You love her too much. You want to be loyal to her and only her. 
+you  stay there. With nothing to eat or drink. Days and weeks pass by. You feel your body weakened. You no longer can get up and walk. You feel your eyes are getting heavier and heavier before you finally close your eyes and never open them again (end)
+
+-(If you choose to not show the card) at first, you wanted to seek help from the old man. But now a thought came to your mind. It has been days. What if... Emily just doesn't want you anymore? What if that's the truth? She left you because she decided to abandoned you and here you are trying to go back to her. If you come back, she'll be very angry. You think for a while
+then, you decide to throw away the card into the sewer
+-(New ending) you choose to live as a stray and not trusting or giving your loyalty to human as easily as before. You live your days alone in the alley. You slowly grow more and more sick.
+you develop a lot of illness such as ringworm and fips. You finally breath your final breath after a year as the sickness worsen.
+
+(If you choose to not investigate)
+Day 4
+- who cares whatever is that smell? You just want to go on with your life.
+- suddenly you remember about the card.
+- you see the old man again. Give the card or not?
+(Basically from this part onward is the same as above)
+
+(If you choose to fight the stray cats and ignore the black cat)
+
+Day 2
+-You wake up to see the black cat is nowhere to be found. Good. You've to focus on finding Emily afterall
+-You are rummaging through the trash can. How lucky, you found another coin. Take or leave it
+(Take) you bring the coin with you
+(Leave) you walk away empty handed
+-You see the old man again. Today too, the music he plays bring back old memories.
+-(If you choose take) you walk to him. Give him the coin or not
+-(Give) he is very happy and today, he gives you some food. +1 life
+-(Don't) he pat you on the head
+-You stroll around and see the kind man again. Today, something is really suspicious with him. He is smiling but it seems like he's also holding back some kind of anger? Hatred? You're unsure of it.
+-he gives you food. Take it or leave it?
+-(Take) +1 life
+-(Leave) You just dislike this man. You hiss at him.
+- You greets the cats there. They're happy
+however, they still need some times to find clues. -You're a bit disappointed and walk away.
+-You find some shelter to rest that night. But somehow today, you feel so uneasy. I wonder why?
+
+Day 3
+-you wake up yet to another day in an unfamiliar alley. You are tired and just want to go home. Do you rummage through the trash can again?
+-(Yes) you found nothing
+-(No) you walk away
+-Today too, the beautiful sound of music is entering your ears. You listen to the song. But this time, from afar since you've no offering to give the sweet old man.
+-you meet the kind man again. He seems to be throwing a sack of something. What could it be? Hm. You don't bother too much and walk away. 
+-You go to the strange alleyway again. Before you could greet them, they happily invite you in with such honor. "Good job!" You're confused.
+they told you that you're a wonderful hitman. -What? You don't understand. But you're happy that they're in a good mood.
+-they gave you a card. You take it 
+on the card, there's Emily's face on it. That's all you understand. You're a cat. You cannot read.
+but you're happy anyways. This marks the end of your business with the stray cats. You go find a place to rest that night
+
+(Day 4 onward is pretty much the same as the other one)
