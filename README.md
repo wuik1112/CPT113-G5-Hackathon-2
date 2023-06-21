@@ -1,5 +1,6 @@
 # CPT113-G5-Hackathon-2
 • Description of your game.
+
 • Features of your game.
 • How to play your game.
 • How object-oriented concepts were used to develop your game.
