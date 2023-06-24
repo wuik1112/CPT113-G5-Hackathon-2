@@ -37,7 +37,7 @@ You are rummaging through the trash can. How lucky, you found another coin. Take
 -(Take) you bring the coin with you
 -(Leave) you walk away empty handed
 You see the old man again. Today too, the music he plays bring back old memories.
--(If you choose take) you walk to him. Give him the coin or not
+-you walk to him. Give him the coin or not
 -(Give) he is very happy and today, he gives you some food. +1 life
 -(Don't) he pat you on the head
 -You stroll around and see the kind man again. Today, something is really suspicious with him. He is smiling but it seems like he's also holding back some kind of anger? Hatred? You're unsure of it.
