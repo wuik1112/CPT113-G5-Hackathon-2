@@ -44,10 +44,12 @@ You see the old man again. Today too, the music he plays bring back old memories
 -he gives you food. Take it or leave it?
 -(Take) you keep the food in your mouth. You did not eat it
 -(Leave) You just dislike this man. You hiss at him.
--(If you choose take) You go all the way to the strange alley in hope for some update on Emily's whereabout. You greets the cats there and give the food to them. They're happy
+-You go all the way to the strange alley in hope for some update on Emily's whereabout. The cats ask you for today's portion of food. 
+-(Give them the food) They're happy
+-(Not enough food)  -2 lives.
 however, they still need some times to find clues. You're a bit disappointed and walk away.
--(If you choose to leave) you go all the way to strange alley in hope for some update on Emily's whereabout. You greet them but they don't seem too happy. Did you forget about something? Uh oh. The food. You forgot the food. -2 lives. You should be happy you're alive and this is your final warning.
--You find some shelter to rest that night. But somehow today, you feel so uneasy. I wonder why?
+-You should be happy you're alive and this is your final warning.
+-You find some shelter to rest that night. But somehow today, you feel so uneasy. 
 
 Day 3
 -you wake up yet to another day in an unfamiliar alley. -You are tired and just want to go home. Do you rummage through the trash can again?
