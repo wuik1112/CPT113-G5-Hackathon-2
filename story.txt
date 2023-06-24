@@ -12,7 +12,7 @@ Alley
 - (take) you bring the coin with you
 - (leave) you walk away empty-handed
 - you walk out of the alleyway into the busy city. as you walk, you see an old man who is a street performance. as you listen to his music, you cant help but recall the memory of Emily humming the same song as she prepared your food
-- (if take the coin) you stay to listen to his performance, you walk toward him. Do you give him the coin?
+- you walk toward him. Do you give him the coin?
 - (give) he is very happy to see a feline offers him a coin. he pats you and you are very happy.
 - (dont give) he is still happy to see you enjoy his performance
 - you run around and see a strange alleyway. you enter the alleyway in hope to find shelter for the night and maybe some more food. As you are busy rummaging through the trash can, you hear a growl from behind you. it was a Siamese cat with scars all over his body.
