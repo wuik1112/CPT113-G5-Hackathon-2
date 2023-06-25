@@ -123,6 +123,7 @@ void Script::secretEnding()
 	{
 		// switch case to determine normal ending for different ending
 		switch (Script.getEnding())
+		{
 			// END1
 			case 1:
 			{
@@ -140,14 +141,14 @@ void Script::secretEnding()
 			{
 				cout << "You have successfully achieved Ending 3! " << endl ;
 				cout << "*** END3: New Life As Stray ***" << endl;
-	
 			}
+		}
 	} // the value of happiness is maximum, the unique secret ending of different ending is triggered
 	else if (player.getHappiness() == MAX_HAPPINESS)
 	{
 		// switch case to determine secret ending for different ending
 		switch (Script.getEnding())
-			// secret ending for END1 or END3 if the player happiness is achieved
+		{	// secret ending for END1 or END3 if the player happiness is achieved
 			case 1 || case 3:
 			{
 				cout << "You find yourself in a darkened world, but a distant light catches your eye. " << endl
@@ -200,6 +201,7 @@ void Script::secretEnding()
 			{
 				return;
 			}
+		}
 	}
 }
 
