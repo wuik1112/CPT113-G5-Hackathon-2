@@ -51,10 +51,8 @@ however, they still need some times to find clues. You're a bit disappointed and
 -You find some shelter to rest that night. -You should be happy you're alive but somehow today, you feel so uneasy. 
 
 Day 3
--you wake up yet to another day in an unfamiliar alley. -You are tired and just want to go home. Do you rummage through the trash can again?
--(Yes) you found nothing
--(No) you walk away
--Today too, the beautiful sound of music is entering your ears. You listen to the song. But this time, from afar since you've no offering to give the sweet old man.
+-you wake up yet to another day in an unfamiliar alley. -You are tired and just want to go home. 
+-At this moment, the beautiful sound of music is entering your ears again. You listen to the song. But this time, from afar since you've no offering to give the sweet old man.
 -you meet the kind man again. He seems to be throwing a sack of something. What could it be? Hm. You don't bother too much and walk towards him.
 he sees you and greets you happily. As usual, he gives you some food. Accept?
 -(Yes) you only nibble a bit on the food. You keep the rest. +1 life
