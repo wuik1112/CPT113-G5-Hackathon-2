@@ -57,9 +57,9 @@ Day 3
 he sees you and greets you happily. As usual, he gives you some food. Accept?
 -(Yes) you only nibble a bit on the food. You keep the rest. +1 life
 -(No) you sure dislike this man huh?
--You go to the strange alleyway again. Before you could greet them, they happily invite you in with such honor. "Good job!" You're confused.
--they told you that you're a wonderful hitman. What? You don't understand. But you're happy that they're in a good mood.
--So about the food? Give them food?
+-You go to the strange alleyway again. Today, the stray cats appear unusually excited, as if something extraordinary has happened.
+-You don't understand it. But you're happy that they're in a good mood.
+-As usual, they ask you for today's food.
 -(Yes) they're happy
 -(No) they realised you didn't bring any food. -3 lives. You were warned.
 -they gave you a card. You take it 
