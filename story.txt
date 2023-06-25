@@ -59,10 +59,9 @@ he sees you and greets you happily. As usual, he gives you some food. Accept?
 -(No) you sure dislike this man huh?
 -You go to the strange alleyway again. Before you could greet them, they happily invite you in with such honor. "Good job!" You're confused.
 -they told you that you're a wonderful hitman. What? You don't understand. But you're happy that they're in a good mood.
--(if you take food from kind man)So about the food? Give them food?
+-So about the food? Give them food?
 -(Yes) they're happy
--(No) -3 lives. You were warned
--(If you didn't take the food from kind man) they realised you didn't bring any food. -3 lives. You were warned.
+-(No) they realised you didn't bring any food. -3 lives. You were warned.
 -they gave you a card. You take it 
 -on the card, there's Emily's face on it. That's all you understand. You're a cat. You cannot read.
 -but you're happy anyways. This marks the end of your business with the stray cats. -You go find a place to rest that night
