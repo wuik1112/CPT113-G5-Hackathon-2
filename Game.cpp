@@ -1,10 +1,10 @@
 #include <iostream>
 #include <fstream> // multiple file inclusion
 #include <string> 
-#include <Player.h> // To save and load the player info from text file
-#include <Item.h>
-#include <Game.h>
-#include <Script.h>
+#include "Player.h" // To save and load the player info from text file
+#include "Item.h"
+#include "Game.h"
+#include "Script.h"
 
 //Constructor
 Game::Game()
