@@ -1,9 +1,9 @@
 #include <iostream>
 #include <fstream> //multiple file inclusion
 #include <string> 
-#include <Script.h> //To save the current chapter and load the previous chapter
-#include <Player.h> //To save and load the player info from text file
-#include <Item.h> //To save and load the condition of item from text file
+#include "Script.h" //To save the current chapter and load the previous chapter
+#include "Player.h" //To save and load the player info from text file
+#include "Item.h" //To save and load the condition of item from text file
 
 using namespace std;
 
