@@ -29,7 +29,7 @@ class Game
 		//Start a new game
 		void startGame();
 		//Save progress to text file
-		void saveProgress(int currentChapter);
+		void saveProgress(script.getCurrentChapter());
 		//Load progress from text file
 		void loadProgress();
 		// Delete progress in text file
