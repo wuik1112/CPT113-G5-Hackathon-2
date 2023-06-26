@@ -169,6 +169,11 @@ void Script::day1()
 	player.deleteLives(1);
 	player.checkLives();
 	}
+    else
+    {
+	    cout << "Unbothered by the presence of the black cat, you continue your slumber and dismiss his existence.\n";
+	    cout << " A tinge of sadness envelops the black-furred feline, compelling his to depart, his silent footsteps fading into the night.\n";
+    }
 	getchar();
 }
 
