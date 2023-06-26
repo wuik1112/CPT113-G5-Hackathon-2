@@ -30,14 +30,14 @@ void Game::startGame()
 
 
 //Save progress to text file
-void Game::saveProgress(int currentChapter)
+void Game::saveProgress(script.getCurrentChapter())
 {
 	// open the text file to write in
     ofstream outputFile("progress.txt");
 
 	if (outputFile.is_open()) {
 		// write the current chapter to text file
-        outputFile << game.getCurrentChapter() << endl ;
+        outputFile << script.getCurrentChapter() << endl ;
 		outputFile.close();  // Close the text file
         
 		cout << endl << "Progress saved successfully! " << endl;
@@ -53,7 +53,6 @@ void Game::saveProgress(int currentChapter)
 void Game::loadProgress()
 {
 	ifstream inFile("progress.txt");
-    string currentChapter;
 
     if (inFile.is_open()) 
 	{
@@ -62,7 +61,7 @@ void Game::loadProgress()
 		// the last line in the progress.txt is the latest progress
         while (getline(inFile, current)) 
 		{
-            currentChapter = current;
+            script.setCurrentChapter(current);
         }
 
         inFile.close();
@@ -70,9 +69,9 @@ void Game::loadProgress()
         cout << "Failed to load the progress." << endl;
     }
 
-	cout << "Your latest progress is in Chapter " << currentChapter << endl;
+	cout << "Your latest progress is in Chapter " << script.getCurrentChapter() << endl;
 	//according to the current chapter, display the current chapter
-	switch (currentChapter)
+	switch (script.getCurrentChapter())
 	{
 		case 1: day1();
 		case 2: day2();
@@ -123,7 +122,7 @@ void Game::continueGame()
 	switch (num)
 	{
 		case 1:
-			saveProgress(game.getCurrentChapter());
+			saveProgress(script.getCurrentChapter());
 		case 2: 
 			quitGame();
 	}
@@ -134,7 +133,7 @@ void Game::quitGame()
 {
 	cout << "Quiting the game..." << endl;
 	// Automatically save the progress before quiting the game
-	saveProgress(game.getCurrentChapter());
+	saveProgress(script.getCurrentChapter());
 	// Exit the program
 	exit(0);
 	cout << "Game exited. " << endl;
