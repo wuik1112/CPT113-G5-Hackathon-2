@@ -201,6 +201,8 @@ void Script::day1()
 
 void Script::day2()
 {
+	setCurrentChapter(2);
+	
 	cout << "You wake up to see the black cat is nowhere to be found. Good. You've to focus on finding Emily afterall.\n";
 	getchar();
 	cout << "You are rummaging through the trash can. How lucky, you found another coin. Take or leave it?\n";
@@ -286,6 +288,8 @@ void Script::day2()
 
 void Script::day3()
 {
+	setCurrentChapter(3);
+	
 	cout << "You wake up yet to another day in an unfamiliar alley. You are tired and just want to go home.\n";
 	getchar();
 	cout << "You walk to the street and try to find the sweet old man, but you failed this time.\n";
@@ -345,6 +349,8 @@ void Script::day3()
 
 void Script::day4()
 {
+	setCurrentChapter(4);
+	
 	cout << "You're woken up by some weird smell. Investigate or not?\n";
 	cout << "1. Investigate.\n2. Ignore it and walk away.\n";
 	cout << "Please enter your choice: ";
@@ -426,6 +432,8 @@ void Script::day4()
 
 void Script::day5()
 {
+	setCurrentChapter(5);
+	
 	cout << "You wake up again. This time in different alley. You are too traumatized from yesterday event.\n";
 	getchar();
 	cout << "You are about to go find food. You look back and saw the card. Oh yea. You forgot to find Emily yesterday. You take the card with you.\n";
