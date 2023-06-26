@@ -266,7 +266,7 @@ void Script::day2()
 	game.continueGame();
 	// exit program if player choose to exit
 	// call next chapter if the player want to continue
-	day2();
+	day3();
 }
 
 void Script::day3()
@@ -325,7 +325,7 @@ void Script::day3()
 	game.continueGame();
 	// exit program if player choose to exit
 	// call next chapter if the player want to continue
-	day2();
+	day4();
 }
 
 void Script::day4()
@@ -406,7 +406,7 @@ void Script::day4()
 	game.continueGame();
 	// exit program if player choose to exit
 	// call next chapter if the player want to continue
-	day2();
+	day5();
 }
 
 void Script::day5()
@@ -463,12 +463,6 @@ void Script::day5()
 	cout << "You realize that something bad is gonna happened. You run around and search every corner of the house. Finally, in the bathroom, you find her.\n";
 	getchar();
 	ending2();
-
-	// ask if player would like to continue
-	game.continueGame();
-	// exit program if player choose to exit
-	// call next chapter if the player want to continue
-	day2();
 }
 
 // display the endings depends on player choice
