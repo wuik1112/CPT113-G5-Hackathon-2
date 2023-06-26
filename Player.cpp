@@ -9,13 +9,13 @@ Player::Player()
 	//set initial state
 	name = "";
 	countLives = 3;
-	countHappy = 0;
+	countHappiness = 0;
 }
 Player::~Player()
 {
 	name = "";
 	countLives = 0;
-	countHappy = 0;
+	countHappiness = 0;
 }
 void Player::setName(string n)
 {
@@ -38,7 +38,7 @@ int Player::getLives()
 
 void Player::addHappiness(int num)
 {
-	countHappy = countHappy + num;
+	countHappiness = countHappiness + num;
 }
 int Player::getHappiness()
 {
