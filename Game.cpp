@@ -138,8 +138,8 @@ void Game::loadProgress()
 		case 5: day5();
 	}
 		
-	// after display the current chapter, delete the content in text file to prevent future confusion
-	deleteProgress();
+	// // after display the current chapter, delete the content in text file to prevent future confusion
+	// deleteProgress();
 }
 
 // void Game::deleteProgress()
