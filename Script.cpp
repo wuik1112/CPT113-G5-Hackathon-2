@@ -8,16 +8,18 @@ using namespace std;
 // Constructor
 Script::Script()
 {
+	setCurrentChapter(1);
 	setEnding(0);
 }
 
 // Destructor
 Script::~Script()
 {
+	setCurrentChapter(0);
 	setEnding(0);
 }
 
-//Ending type
+// Ending type
 void Script::setEnding(int end)
 {
 	ending = new int(end);
@@ -28,8 +30,21 @@ int Script::getEnding()
 	return ending;
 }
 
+// Current Chapter
+void Script::setCurrentChapter(int currentChp)
+{
+	currentChapter = new int(currentChp);
+}
+
+int Script::getCurrentChapter()
+{
+	return currentChapter;
+}
+
 void Script::day1()
 {
+	setCurrentChapter(1);
+	
 	cout << "You wake up from your sleep and you are wondering what are you doing there. Then, you recall what happened yesterday.\n";
 	getchar();
 	cout << "Your owner, Emily, brought you to the park nearby to play catch. She threw your toy far away and let you ran after it.\n";
