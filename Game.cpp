@@ -1,9 +1,8 @@
 #include <iostream>
 #include <fstream> // multiple file inclusion
 #include <string> 
-#include "Player.h" // To save and load the player info from text file
-#include "Item.h"
 #include "Game.h"
+#include "Player.h"
 #include "Script.h"
 
 //Constructor
@@ -20,12 +19,25 @@ Game::~Game()
 //Start a new game
 void Game::startGame()
 {
-	Player player; // call the constructor of player class to initialize all value to null
-	Item item; //call the constructor of item class to initialize all value to null
-	Script script; // call the constructor of script class to initialize all value to null
+	string name;
 	
 	cout << "Welcome to our game, 'Kitty: Far From Home'. " << endl;
 	getchar(); 
+	cout << "This is a story about a kitten lost its owner." << endl
+	     << "You need to make decision for each condition to help the kitten reunites with its owner. " << endl;
+
+	cout << "Please give a name for this kitten: " << endl; 
+	getline(cin, name);
+	player.setName(name);
+
+	cout << "Now, you are the kitten, " << player.getName() << ". " << endl;
+	cout << "Here are your current information: " << endl;
+	cout << "Your Lives: " << player.getLives() << endl;
+	cout << "Your Happiness: " << player.getHappiness() << endl;
+	getchar();
+	cout << "Enjoy your journey! " << endl;
+
+	script.day1();
 }
 
 
