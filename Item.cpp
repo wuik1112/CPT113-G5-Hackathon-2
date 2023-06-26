@@ -47,13 +47,12 @@ Item::~Item()
 	
 }
 
-void Item::PushCoin(int num)
+void Item::PushCoin()
 {
 	//if player receive a coin
 	Coin *newCoin = nullptr;
 	
 	newCoin = new Coin;
-	newCoin->cVal = num;
 	
 	if(isEmpty())
 	{
@@ -69,13 +68,12 @@ void Item::PushCoin(int num)
 	coinCount++;
 }
 
-void Item::PushCard(int num)
+void Item::PushCard()
 {	
 	//if player receive a business card
 	Card *newCard = nullptr;
 	
 	newCard = new Card;
-	newCard->bVal = num;
 	
 	if(isEmpty())
 	{
@@ -91,13 +89,12 @@ void Item::PushCard(int num)
 	cardCount++;
 }
 
-void Item::PushFood(int num)
+void Item::PushFood()
 {
 	//if player receive food
 	Food *newFood = nullptr;
 	
 	newFood = new Food;
-	newFood->fVal = num;
 	
 	if(isEmpty())
 	{
@@ -113,7 +110,7 @@ void Item::PushFood(int num)
 	foodCount++;
 }
 
-void Item::PopCoin(int num)
+void Item::PopCoin()
 {
 	//remove coin from player's inventory
 	Coin *coinTemp = nullptr;
@@ -124,7 +121,6 @@ void Item::PopCoin(int num)
 	}
 	else
 	{
-		num = coinTop->cVal;
 		coinTemp = coinTop->nextCoin;
 		delete coinTop;
 		coinTop = coinTemp;
@@ -133,7 +129,7 @@ void Item::PopCoin(int num)
 	}
 }
 
-void Item::PopCard(int num)
+void Item::PopCard()
 {
 	//remove card from player's inventory
 	Card *cardTemp = nullptr;
@@ -144,7 +140,6 @@ void Item::PopCard(int num)
 	}
 	else
 	{
-		num = cardTop->bVal;
 		cardTemp = cardTop->nextCard;
 		delete cardTop;
 		cardTop = cardTemp;
@@ -153,7 +148,7 @@ void Item::PopCard(int num)
 	}
 }
 
-void Item::PopFood(int num)
+void Item::PopFood()
 {
 	//remove food from player's inventory
 	Food *foodTemp = nullptr;
@@ -164,7 +159,6 @@ void Item::PopFood(int num)
 	}
 	else
 	{
-		num = foodTop->fVal;
 		foodTemp = foodTop->nextFood;
 		delete foodTop;
 		foodTop = foodTemp;
