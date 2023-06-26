@@ -8,7 +8,10 @@ Item::Item()
 	coinTop = nullptr;
 	cardTop = nullptr;
 	foodTop = nullptr;
-	count = 0;
+	coinCount = 0;
+	cardCount = 0;
+	foodCount = 0;
+	
 }
 
 Item::~Item()
@@ -42,7 +45,6 @@ Item::~Item()
 		delete tempFood;
 	}
 	
-	count = 0;
 }
 
 void Item::PushCoin(int num)
@@ -64,7 +66,7 @@ void Item::PushCoin(int num)
 		coinTop = newCoin;
 	}
 	
-	count++;
+	coinCount++;
 }
 
 void Item::PushCard(int num)
@@ -86,7 +88,7 @@ void Item::PushCard(int num)
 		cardTop = newCard;
 	}
 	
-	count++;
+	cardCount++;
 }
 
 void Item::PushFood(int num)
@@ -108,7 +110,7 @@ void Item::PushFood(int num)
 		foodTop = newFood;
 	}
 	
-	count++;
+	foodCount++;
 }
 
 void Item::PopCoin(int num)
@@ -127,7 +129,7 @@ void Item::PopCoin(int num)
 		delete coinTop;
 		coinTop = coinTemp;
 		
-		count--;
+		coinCount--;
 	}
 }
 
@@ -147,7 +149,7 @@ void Item::PopCard(int num)
 		delete cardTop;
 		cardTop = cardTemp;
 		
-		count--;
+		cardCount--;
 	}
 }
 
@@ -167,15 +169,47 @@ void Item::PopFood(int num)
 		delete foodTop;
 		foodTop = foodTemp;
 		
-		count--;
+		foodCount--;
 	}
 }
 
-bool Item::isEmpty()
+bool Item::isCoinEmpty()
 {
 	bool status;
 	
-	if(count <= 0)
+	if(coinCount <= 0)
+	{
+		status = true;
+		return status;
+	}
+	else
+	{
+		status = false;
+		return status;
+	}
+}
+
+bool Item::isCardEmpty()
+{
+	bool status;
+	
+	if(cardCount <= 0)
+	{
+		status = true;
+		return status;
+	}
+	else
+	{
+		status = false;
+		return status;
+	}
+}
+
+bool Item::isFoodEmpty()
+{
+	bool status;
+	
+	if(foodCount <= 0)
 	{
 		status = true;
 		return status;
