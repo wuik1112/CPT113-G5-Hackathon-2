@@ -26,7 +26,7 @@ int main()
 	cin >> choose;
 
 	// player can choose 1 to 5 
-	while(choose != 1 && choose != 2 && choose != 3 && choose != 4 && choose != 5)
+	while(choose < 1 || choose > 5)
 	{
 		cout << "Enter only number from 1 to 5: ";
 		cin >> choose;
@@ -45,7 +45,7 @@ int main()
 			cout << "1.Yes\n2.No\n3.delete past progress\n";
 			cin >> choice;
 
-			while(choice != 1 || choice != 2 || choice != 3)
+			while(choice < 1 || choice > 3)
 			{
 				cout << "Input number from 1 to 3: ";
 				cin >> choice;
