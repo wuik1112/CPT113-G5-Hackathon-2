@@ -4,6 +4,8 @@
 
 using namespace std;
 
+const int MAX_HAPPINESS = 30;
+
 class Script
 {
 	private:
@@ -13,6 +15,7 @@ class Script
 		Item coin;
 		Item card;
 		int *ending; 
+		int *currentChapter;
 		
 	public:
 		// Constructor
@@ -21,6 +24,10 @@ class Script
 		~Script();
 		void setEnding(int end);
 		int getEnding();
+		// to record the chapter ongoing
+		void setCurentChapter(int currentChapter);
+		int getCurrentChapter();
+		// to display the corresponding story
 		void day1();
 		void day2();
 		void day3();
