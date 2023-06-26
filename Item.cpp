@@ -47,6 +47,21 @@ Item::~Item()
 	
 }
 
+int getCoinCount()
+{
+	return coinCount;
+}
+
+int getCardCount()
+{
+	return cardCount;
+}
+
+int getFoodCount()
+{
+	return foodCount;
+}
+
 void Item::PushCoin()
 {
 	//if player receive a coin
