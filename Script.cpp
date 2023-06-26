@@ -275,7 +275,8 @@ void Script::day3()
     	cout << "You give them the food and they tell you some good news.";
 	}
 	getchar();
-	cout << "They give you a card. You take it and have a look.\n";
+	cout << "They give you a card. Card+1\nYou take it and have a look.\n";
+	card.push();
 	getchar();
 	cout << "On the card, there's Emily's face. That's all you understand. You're a cat. You cannot read.\n";
 	getchar();
@@ -384,6 +385,7 @@ void Script::day5()
 	if (num == 2) {
 		ending3();
 	}
+	card.pop();
 	cout << "He looks at the card and immediately understand. He knows you want to meet the person on the card.\n";
 	getchar();
 	cout << "He carries you all the way to your old home. The more he walks, the familiar the scenery.\n";
