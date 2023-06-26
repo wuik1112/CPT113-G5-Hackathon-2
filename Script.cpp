@@ -50,7 +50,7 @@ void Script::day1()
     if(num == 1) {
 	cout << "You enjoy the food...kinda\n";
 	cout << "Happiness+5\n";
-	happiness += 5;
+	player.addHappiness(5);
 	}
 	getchar();
 	cout << "Before starting your adventure, you also found a coin. Do you take the coin?\n";
@@ -85,7 +85,7 @@ void Script::day1()
 	cout << "Coin-1\n";
 	cout << "He is very happy to see a feline offers him a coin. He pats you and you are very happy.\n";
 	cout << "Happiness+10\n";
-	happiness += 10;
+	player.addHappiness(10);
 	}
 	getchar();
 	cout << "You run around and see a strange alleyway. You enter the alleyway in hope to find shelter for the night and maybe some more food.\n";
@@ -104,11 +104,11 @@ void Script::day1()
 			cin >> num;
 		}
     if(num == 1) {
-    	lives = lives - 1;
-	cout << " -1 live but you win. the stray cats accept their defeat and will listen to your request.\n";
-	     << "You want them to help you find clues to reunite with Emily.\n";
-    	cout << "Lives-1\n";
+	cout << "You are injured in the fight but you win. Lives-1\n";
+	player.deleteLives(1);
 	player.checkLives();
+	cout << "The stray cats accept their defeat and will listen to your request.\n";
+	cout << "You want them to help you find clues to reunite with Emily.\n";
 	}
 	getchar();
 	cout << "They will help you but you need to bring them food every day until they manage to get some information about your owner. You agree to their request.\n";
@@ -145,8 +145,8 @@ void Script::day1()
 			cin >> num;
 		}
     if(num == 1) {
-    	lives = lives -1;
-    	cout << "He is grateful but -1 live for you because it was cramped and you barely survive the cold night.\n";
+    	cout << "He is grateful but you lost 1 live because it was cramped and you barely survive the cold night. Lives-1\n";
+	player.deleteLives(1);
 	player.checkLives();
 	}
 	getchar();
@@ -187,7 +187,7 @@ void Script::day2()
     	cout << "Coin-1\n";
 	cout << "He is very happy and today, he gives you some food. Food+1, Happiness+10\n";
 	food.push();
-	happiness += 10;
+	player.addHappiness(10);
 	}
 	getchar();
 	cout << "You stroll around and see the strange man again. Today, something is really suspicious with him.\n";
@@ -216,7 +216,7 @@ void Script::day2()
     	cout << "Oh no! You don't have enough food for the cats.\n";
     	cout << "The cats seem angry to you. They decide to give you some punishments.\n";
     	cout << "You have lost 3 lives.\n";
-    	lives = lives-3;
+    	player.deleteLives(3);
 	player.checkLives();
 	}
     
@@ -264,8 +264,8 @@ void Script::day3()
 	getchar();
 	if (food.isEmpty()) {
     	cout << "They realised you didn't bring any food. You were warned.\n";
-    	cout << "Lives-3\n";
-    	lives = lives-3;
+    	cout << "Lives-2\n";
+    	player.deleteLives(2);
 	player.checkLives();
 	}
     
@@ -275,7 +275,8 @@ void Script::day3()
     	cout << "You give them the food and they tell you some good news.";
 	}
 	getchar();
-	cout << "They give you a card. Card+1\nYou take it and have a look.\n";
+	cout << "They give you a card. Card+1, Happiness+15\nYou take it and have a look.\n";
+	player.addHappiness(15);
 	card.push();
 	getchar();
 	cout << "On the card, there's Emily's face. That's all you understand. You're a cat. You cannot read.\n";
@@ -592,15 +593,3 @@ void Script::secretEnding()
 	}
 }
 
-// call if player lives less than and equal to 0
-void Script::checkLives()
-{
-	if (player.getLives() > 0)
-		return;
-	else if (player.getLives() <= 0)
-	{
-		cout << "Unfortunately, you have exhausted all of your lives." << endl;
-		cout << "Your journey ends here...Game Over. "<<endl;
-		game.quitGame();
-	}
-}
