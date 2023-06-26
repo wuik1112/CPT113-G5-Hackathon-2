@@ -75,6 +75,7 @@ int main()
 			cout << "Khoo Iu Wan\nLoo Jia Xin\nRaziqin Husna Binti Abdul Wahid\n";
 			cout << "Special Thanks to: \n";
 			cout << "Dr. Teh Je Sen\nDr Nur Hana Samsudin\nDr Siti Hazyanti Mohd Hashim\n";
+			cout << "All Gratitude Toward OYEN For Game Inspiration!!\n";
 			break;
 		}
 		case 5:
