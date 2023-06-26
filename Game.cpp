@@ -21,7 +21,7 @@ void Game::startGame()
 {
 	string name;
 	
-	cout << "Welcome to our game, 'Feline: Far From Home'. " << endl;
+	cout << "Welcome to our game, \"Feline: Far From Home\". " << endl;
 	getchar(); 
 	cout << "This is a story about a kitten lost its owner." << endl
 	     << "You need to make decision for each condition to help the kitten reunites with its owner. " << endl;
@@ -72,21 +72,60 @@ void Game::saveProgress(script.getCurrentChapter())
 void Game::loadProgress()
 {
 	ifstream inFile("progress.txt");
-
-    if (inFile.is_open()) 
+	
+	if (inFile.is_open())
 	{
-        int current;
-		
-		// the last line in the progress.txt is the latest progress
-        while (getline(inFile, data)) 
+        	string data; 
+		int i = 1;
+		while (getline(inFile, data)) 
 		{
-            script.setCurrentChapter(current);
-        }
-
-        inFile.close();
-    } else {
-        cout << "Failed to load the progress." << endl;
-    }
+			switch (i)
+			{
+				case 1: 
+				{
+					player.setName(data);
+					break;
+				}
+				case 2: 
+				{
+					player.setLives(data);
+					break;
+				}
+				case 3:
+				{
+					player.setHappiness(data);
+					break;
+				}
+				case 4: 
+				{
+					for (int i=0; i<data; i++)
+						item.pushCoin();
+					break;
+				}
+				case 5: 
+				{
+					for (int i=0; i<num; i++)
+						item.pushFood();
+					break;
+				}
+				case 6: 
+				{
+					for (int i=0; i<num; i++)
+						item.pushCard();
+					break;
+				}
+				case 7: 
+				{
+					script.getCurrentChapter();
+					break;
+				}
+			}
+			
+		}
+		inFile.close();
+	} else {
+		cout << "Failed to load the progress." << endl;
+	}
 
 	cout << "Your latest progress is in Chapter " << script.getCurrentChapter() << endl;
 	//according to the current chapter, display the current chapter
@@ -103,18 +142,18 @@ void Game::loadProgress()
 	deleteProgress();
 }
 
-void Game::deleteProgress()
-{
-	// overwrite the content with empty
-	ofstream deleteFile("progress.txt", ofstream::out | ofstream::trunc);
+// void Game::deleteProgress()
+// {
+// 	// overwrite the content with empty
+// 	ofstream deleteFile("progress.txt", ofstream::out | ofstream::trunc);
 
-    if (file.is_open()) 
-    {
-        file.close();
-    	cout << "Progress deleted. " << endl;
-    } else
-    	cout << "Failed to delete the progress. " << endl;
-}
+//     if (file.is_open()) 
+//     {
+//         file.close();
+//     	cout << "Progress deleted. " << endl;
+//     } else
+//     	cout << "Failed to delete the progress. " << endl;
+// }
 
 // Ask player to continue or quit game
 void Game::continueGame()
