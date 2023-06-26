@@ -74,11 +74,11 @@ void Game::loadProgress()
 	//according to the current chapter, display the current chapter
 	switch (currentChapter)
 	{
-		case 1: getDay1();
-		case 2: getDay2();
-		case 3: getDay3();
-		case 4: getDay4();
-		case 5: getDay5();
+		case 1: day1();
+		case 2: day2();
+		case 3: day3();
+		case 4: day4();
+		case 5: day5();
 	}
 		
 	// after display the current chapter, delete the content in text file to prevent future confusion
@@ -91,11 +91,42 @@ void Game::deleteProgress()
 	ofstream deleteFile("progress.txt", ofstream::out | ofstream::trunc);
 
     if (file.is_open()) 
-	{
+    {
         file.close();
     	cout << "Progress deleted. " << endl;
     } else
     	cout << "Failed to delete the progress. " << endl;
+}
+
+// Ask player to continue or quit game
+void Game::continueGame()
+{
+	// variable that hold player's choice
+	int num = 0;
+	
+	// Ask if he would like to continue
+	cout << "Do you want to continue to next chapter?\n";
+	cout << "1. Yes\n2. No (Quit)\n";
+	cout << "Please enter your choice: ";
+	// player input
+	cin >> num;
+
+	// input validation for player's choice
+	while (num != 1 && num != 2)
+	{
+		cout << "Invalid choice.\n";
+		cout << "Please reenter your choice: ";
+		cin >> num;
+	}
+
+	// save or exit program based on player choice
+	switch (num)
+	{
+		case 1:
+			saveProgress();
+		case 2: 
+			quitGame();
+	}
 }
 
 // Quit the game
@@ -104,5 +135,7 @@ void Game::quitGame()
 	cout << "Quiting the game..." << endl;
 	// Automatically save the progress before quiting the game
 	saveProgress();
+	// Exit the program
+	exit(0);
 	cout << "Game exited. " << endl;
 } 
