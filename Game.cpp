@@ -114,7 +114,7 @@ void Game::loadProgress()
 				}
 				case 6: 
 				{
-					script.setCurrentChapter(data);
+					script.setCurrentChapter(num);
 					break;
 				}
 			}
