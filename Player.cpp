@@ -25,17 +25,23 @@ string Player::getName()
 {
 	return name;
 }
+void Player::setLives(int lives)
+{
+	countLives = lives;
+}
 void Player::deleteLives(int num)
 {
 	//lose lives
 	countLives = countLives - num;
 }
-
 int Player::getLives()
 {
 	return countLives;
 }
-
+void Player::setHappiness(int happy)
+{
+	countHappiness = happy;
+}
 void Player::addHappiness(int num)
 {
 	countHappiness = countHappiness + num;
