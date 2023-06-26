@@ -17,7 +17,7 @@ class Player
 		void setLives(int);
 		int getLives();
 		void deleteLives(int);
-		void setHappiness();
+		void setHappiness(int);
 		int getHappiness();
 		void addHappiness(int);
 		void checkLives();
