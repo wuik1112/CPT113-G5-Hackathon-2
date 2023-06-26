@@ -8,7 +8,7 @@ class Player
 	private:
 		string name;
 		int countLives;
-		int countHappy;
+		int countHappiness;
 	public:
 		Player();
     		~Player();
