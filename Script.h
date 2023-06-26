@@ -9,6 +9,9 @@ class Script
 	private:
 		Player player;
 		Game game;
+		Item food;
+		Item coin;
+		Item card;
 		int *ending; 
 		
 	public:
