@@ -14,6 +14,9 @@ class Game
 		Player player;
 		// to use the function in Item class
 		Item item;
+		// to use function in Script class
+		Script script;
+		
 		
 	public:
 		//Constructor
@@ -28,6 +31,8 @@ class Game
 		void loadProgress();
 		// Delete progress in text file
 		void deleteProgress();
+		// Ask player if they wanna continue or quit game
+		void continueGame();
 		//Quit the game
 		void quitGame();
 };
