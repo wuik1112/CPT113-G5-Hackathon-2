@@ -175,6 +175,8 @@ void Script::day1()
 	    cout << " A tinge of sadness envelops the black-furred feline, compelling his to depart, his silent footsteps fading into the night.\n";
     }
 	getchar();
+
+	
 }
 
 
