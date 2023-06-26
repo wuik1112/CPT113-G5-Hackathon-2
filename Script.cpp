@@ -296,7 +296,7 @@ void Script::day2()
 	getchar();
 	cout << "When you enter the alley, the cats look at you and ask you for today's portion of food.\n";
 	getchar();
-	if (food.isEmpty()) {
+	if (food.isFoodEmpty()) {
     		cout << "Oh no! With no food left to offer them, their dissatisfaction becomes evident,\n";
     		cout << "and they decide to inflict punishment upon you. As a consequence,\n";
     		cout << "you tragically lose three lives in the process.\n";
@@ -355,7 +355,7 @@ void Script::day3()
 	getchar();
 	cout << "As usual, they ask you for today's food.\n";
 	getchar();
-	if (food.isEmpty()) {
+	if (food.isFoodEmpty()) {
     	cout << "They realised you didn't bring any food. You were warned.\n";
     	cout << "Lives-2\n";
     	player.deleteLives(2);
@@ -495,7 +495,7 @@ void Script::day5()
 	if (num == 2) {
 		ending3();
 	}
-	card.pop();
+	card.PopCard();
 	cout << "He looks at the card and immediately understand. He knows you want to meet the person on the card.\n";
 	getchar();
 	cout << "He carries you all the way to your old home. The more he walks, the familiar the scenery.\n";
