@@ -76,45 +76,43 @@ void Game::loadProgress()
 	if (inFile.is_open())
 	{
         	string data; 
+		int num;
+		getline(inFile, data);
+		player.setName(data);
 		int i = 1;
-		while (getline(inFile, data)) 
+		while (cin >> num) 
 		{
 			switch (i)
 			{
 				case 1: 
 				{
-					player.setName(data);
+					player.setLives(num);
 					break;
 				}
-				case 2: 
+				case 2:
 				{
-					player.setLives(data);
+					player.setHappiness(num);
 					break;
 				}
-				case 3:
+				case 3: 
 				{
-					player.setHappiness(data);
+					for (int i=0; i<num; i++)
+						item.PushCoin();
 					break;
 				}
 				case 4: 
 				{
-					for (int i=0; i<data; i++)
-						item.pushCoin();
+					for (int i=0; i<num; i++)
+						item.PushFood();
 					break;
 				}
 				case 5: 
 				{
-					for (int i=0; i<data; i++)
-						item.pushFood();
+					for (int i=0; i<num; i++)
+						item.PushCard();
 					break;
 				}
 				case 6: 
-				{
-					for (int i=0; i<data; i++)
-						item.pushCard();
-					break;
-				}
-				case 7: 
 				{
 					script.setCurrentChapter(data);
 					break;
