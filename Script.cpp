@@ -532,7 +532,7 @@ void Script::secretEnding()
 			}
 		}
 	} // the value of happiness is maximum, the unique secret ending of different ending is triggered
-	else if (player.getHappiness() == MAX_HAPPINESS)
+	else if (player.getHappiness() >= MAX_HAPPINESS)
 	{
 		// switch case to determine secret ending for different ending
 		switch (Script.getEnding())
