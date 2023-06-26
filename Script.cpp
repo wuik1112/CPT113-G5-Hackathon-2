@@ -91,6 +91,10 @@ void Script::day1()
 	cout << "Happiness+10\n";
 	player.addHappiness(10);
 	}
+    else
+    {
+	  cout << "You experience the enchanting embrace of nostalgia as the music gracefully enters your ears.\n";  
+    }
 	getchar();
 	cout << "You run around and see a strange alleyway. You enter the alleyway in hope to find shelter for the night and maybe some more food.\n";
 	getchar();
