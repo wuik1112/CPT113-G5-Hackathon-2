@@ -104,19 +104,19 @@ void Game::loadProgress()
 				}
 				case 5: 
 				{
-					for (int i=0; i<num; i++)
+					for (int i=0; i<data; i++)
 						item.pushFood();
 					break;
 				}
 				case 6: 
 				{
-					for (int i=0; i<num; i++)
+					for (int i=0; i<data; i++)
 						item.pushCard();
 					break;
 				}
 				case 7: 
 				{
-					script.getCurrentChapter();
+					script.setCurrentChapter(data);
 					break;
 				}
 			}
