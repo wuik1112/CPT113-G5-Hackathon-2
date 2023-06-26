@@ -8,23 +8,27 @@ using namespace std;
 
 int main() 
 {
+	// call the constructor to initialize all the features
 	Player player;
 	Item item;
     	Script script;
 	Game game;
+	// variable to hold the choice of player in main menu
 	int choose;
-	
+
+	// Main menu
 	cout << "Welcome to...\n";
 	cout << "-----------------------------\n";
 	cout << "Feline: Far From Home\n";
 	cout << "-----------------------------\n";
-	cout << "1.Start\n2.Continue Progress\n3.How To Play\n4.Credits\n5.Quit\n";
+	cout << "1.Start\n2.Continue \n3.How To Play\n4.Credits\n5.Quit\n";
 	cout << "-----------------------------\n";
 	cin >> choose;
 
-	while(choose != 1 || choose != 2 || choose != 3 || choose != 4 || choose != 5)
+	// player can choose 1 to 5 
+	while(choose != 1 && choose != 2 && choose != 3 && choose != 4 && choose != 5)
 	{
-		cout << "Enter only number from 1 to 4: ";
+		cout << "Enter only number from 1 to 5: ";
 		cin >> choose;
 	}
 	switch(choose)
