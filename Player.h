@@ -15,10 +15,9 @@ class Player
     		void getName(string);
     		string setName();
 		int getLives();
-		void deleteLives();
+		void deleteLives(int);
 		int getHappiness();
 		void addHappiness(int);
-		//bool checkPlayerStatus();
-		//void happinessCount();
+		void checkLives();
 };
     
