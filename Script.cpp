@@ -176,7 +176,11 @@ void Script::day1()
     }
 	getchar();
 
-	
+	// ask if player would like to continue
+	game.continueGame();
+	// exit program if player choose to exit
+	// call next chapter if the player want to continue
+	day2();
 }
 
 
@@ -257,6 +261,12 @@ void Script::day2()
 	getchar();
 	cout << "You find some shelter to rest that night. You should be happy you're alive but somehow today, you feel so uneasy.\n";
 	getchar();
+
+	// ask if player would like to continue
+	game.continueGame();
+	// exit program if player choose to exit
+	// call next chapter if the player want to continue
+	day2();
 }
 
 void Script::day3()
@@ -310,6 +320,12 @@ void Script::day3()
 	getchar();
 	cout << "But you're happy anyways. This marks the end of your business with the stray cats.\nYou go find a place to rest that night.\n";
 	getchar();
+
+	// ask if player would like to continue
+	game.continueGame();
+	// exit program if player choose to exit
+	// call next chapter if the player want to continue
+	day2();
 }
 
 void Script::day4()
@@ -385,6 +401,12 @@ void Script::day4()
 		cout << "You decide to find a place to rest and continue searching for clues tomorrow\n";
 		getchar();
 	}
+
+	// ask if player would like to continue
+	game.continueGame();
+	// exit program if player choose to exit
+	// call next chapter if the player want to continue
+	day2();
 }
 
 void Script::day5()
@@ -441,6 +463,12 @@ void Script::day5()
 	cout << "You realize that something bad is gonna happened. You run around and search every corner of the house. Finally, in the bathroom, you find her.\n";
 	getchar();
 	ending2();
+
+	// ask if player would like to continue
+	game.continueGame();
+	// exit program if player choose to exit
+	// call next chapter if the player want to continue
+	day2();
 }
 
 // display the endings depends on player choice
