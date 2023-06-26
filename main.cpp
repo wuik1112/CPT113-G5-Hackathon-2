@@ -8,6 +8,10 @@ using namespace std;
 
 int main() 
 {
+	Player player;
+	Item item;
+    	Script script;
+	Game game;
 	int choose;
 	
 	cout << "Welcome to...\n";
@@ -27,24 +31,7 @@ int main()
 	{
 		case 1:
 		{
-			Player player;
-    			Game game;
-    			Script script;
-    			DayList daylist;
-			string name;
-			int proceed;
-
 			game.startGame();
-			
-    			daylist.addDay(&Script::day1);
-    			
-    			daylist.addDay(&Script::day2);
-    
-    			daylist.addDay(&Script::day3);
-    	
-    			daylist.addDay(&Script::day4);
-		
-    			daylist.addDay(&Script::day5);
 			break;
 		}
 		case 2:
@@ -65,7 +52,6 @@ int main()
 			else if(choice == 2)
 			{
 				cout << "Returning to Main Menu...\n";
-				
 			}
 			else
 			{
