@@ -17,11 +17,11 @@ Player::~Player()
 	countLives = 0;
 	countHappy = 0;
 }
-void Player::getName(string n)
+void Player::setName(string n)
 {
 	name = n;
 }
-string Player::setName()
+string Player::getName()
 {
 	return name;
 }
