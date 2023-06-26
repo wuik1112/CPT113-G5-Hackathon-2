@@ -31,8 +31,6 @@ int main()
     			Game game;
     			Script script;
     			DayList daylist;
-    			int num;
-    			int happiness = 0;
 			string name;
 			int proceed;
 			do
