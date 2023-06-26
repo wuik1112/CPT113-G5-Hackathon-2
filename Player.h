@@ -14,8 +14,10 @@ class Player
     		~Player();
     		void getName(string);
     		string setName();
+		void setLives(int);
 		int getLives();
 		void deleteLives(int);
+		void setHappiness();
 		int getHappiness();
 		void addHappiness(int);
 		void checkLives();
