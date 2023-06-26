@@ -8,21 +8,18 @@ class Item
 		//coin item
 		struct Coin
 		{
-			int cVal;
 			Coin *nextCoin;
 		};
 		Coin *coinTop;
 		//business card item
 		struct Card
 		{
-			int bVal;
 			Card *nextCard;
 		};
 		Card *cardTop;
 		//food item
 		struct Food
 		{
-			int fVal;
 			Food *nextFood;
 		};
 		Food *foodTop;
@@ -37,12 +34,12 @@ class Item
 		int getCoinCount();
 		int getCardCount();
 		int getFoodCount();
-		void PushCoin(int);
-		void PushCard(int);
-		void PushFood(int);
-		void PopCoin(int);
-		void PopFood(int);
-		void PopCard(int);
+		void PushCoin();
+		void PushCard();
+		void PushFood();
+		void PopCoin();
+		void PopFood();
+		void PopCard();
 		bool isCoinEmpty();
 		bool isCardEmpty();
 		bool isFoodEmpty();
