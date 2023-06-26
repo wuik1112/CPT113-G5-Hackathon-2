@@ -1,10 +1,14 @@
 #include <iostream>
+#include "Player.cpp"
 #include "Game.cpp"
 #include "Script.cpp"
 #include "DayList.cpp"
 
+using namespace std;
+
 int main() 
 {
+    Player player
     Game game;
     Script script;
     DayList daylist;
