@@ -19,6 +19,11 @@ class Script
 		void setEnding(int end);
 		int getEnding();
 		// display the endings depends on player choice
+		void day1();
+		void day2();
+		void day3();
+		void day4();
+		void day5();
 		void ending1();
 		void ending2();
 		void ending3();
