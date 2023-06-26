@@ -118,6 +118,12 @@ void Script::day1()
 	cout << "The stray cats accept their defeat and will listen to your request.\n";
 	cout << "You want them to help you find clues to reunite with Emily.\n";
 	}
+    else
+    {
+	    cout << "You beg them for mercy as you are never the fight type.\n";
+	    cout << "They decided to spare you, but in return, you must do them a favor.\n";
+	    cout << "You are require to bring them food every day. DO NOT FORGET THIS.\n";
+    }
 	getchar();
 	cout << "They will help you but you need to bring them food every day until they manage to get some information about your owner. You agree to their request.\n";
 	getchar();
@@ -140,6 +146,12 @@ void Script::day1()
     	cout << "Food+1\n";
 	food.push();
 	}
+    else
+    {
+	    cout << "You, driven by an instinctual surge, heed your gut feeling and unleash a resounding\n";
+	    cout << "hiss in his direction, leaving him utterly astonished. In the wake of his bewilderment,\n";
+	    cout << "you swiftly retreat, vanishing into the distance.\n";
+    }
 	getchar();
 	cout << "After some time, you finally found the best place to rest. It is cramped but at least it is warm enough for you to survive the cold, snowy night.\n";
 	getchar();
