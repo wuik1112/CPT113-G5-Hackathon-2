@@ -54,7 +54,7 @@ void Script::day1()
 	cout << "You decide to find your way home and reunite with Emily. You go through the trash can and found a half-eaten burger.\n";
 	getchar();
 	cout << "Do you eat the burger?\n";
-	cout << "1. Eat the burger.\n2. Throw away the burger.\n";
+	cout << "1. Eat.\n2. Throw away.\n";
     cout << "Please enter your choice: ";
     cin >> num;
     while (num != 1 && num != 2) {
@@ -63,13 +63,15 @@ void Script::day1()
 			cin >> num;
 		}
     if(num == 1) {
-	cout << "You enjoy the food...kinda\n";
+	cout << "You enjoy the burger...kinda\n";
+	cout << "It tastes a bit....weird...\n";
 	cout << "Happiness+5\n";
 	player.addHappiness(5);
 	}
     else
     {
 	cout << "You choose to not put that disgusting-looking food in your digestive system.\n";
+	cout << "You throw away the burger.\n";
     }
 	getchar();
 	cout << "Before starting your adventure, you also found a coin. Do you take the coin?\n";
@@ -83,6 +85,8 @@ void Script::day1()
 		}
     if(num == 1) {
     	coin.push();
+	cout << "Despite being a cat, you take the coin anyways.\n";
+	cout << "It might be useful later hehe.\n";
 	cout << "Coin+1\n";
 	}
 	getchar();
@@ -91,7 +95,7 @@ void Script::day1()
 	cout << "As you listen to his music, you cant help but recall the memory of Emily humming the same song as she prepared your food.\n";
 	getchar();
 	cout << "You walk toward him. Do you give him the coin?\n";
-	cout << "1. Give him the coin.\n2. Just listen to the music quietly.\n";
+	cout << "1. Give him.\n2. Just listen to the music quietly.\n";
     cout << "Please enter your choice: ";
     cin >> num;
     while (num != 1 && num != 2) {
@@ -102,7 +106,8 @@ void Script::day1()
     if(num == 1) {
     	coin.pop();
 	cout << "Coin-1\n";
-	cout << "He is very happy to see a feline offers him a coin. He pats you and you are very happy.\n";
+	cout << "He is delighted to see a feline present him with a glimmering coin. The warmth of his gentle hand patting you\n";
+	cout << "fills your heart with sheer happiness.\n";
 	cout << "Happiness+10\n";
 	player.addHappiness(10);
 	}
@@ -127,17 +132,19 @@ void Script::day1()
 			cin >> num;
 		}
     if(num == 1) {
-	cout << "You are injured in the fight but you win. Lives-1\n";
+	cout << "Despite sustaining injuries in the fierce battle, you emerge victorious. Lives-1\n";
 	player.deleteLives(1);
 	player.checkLives();
-	cout << "The stray cats accept their defeat and will listen to your request.\n";
-	cout << "You want them to help you find clues to reunite with Emily.\n";
+	cout << "Having faced the defeat with humility, the stray cats are finally acknowledging your\n";
+	cout << "triumph and willingly yielding to your every request.\n";
+	cout << "You kindly request the stray cats' help in finding crucial clues that can lead you to Emily,\n";
+	cout << "as you eagerly anticipate a joyful reunion with your beloved companion.\n";
 	}
     else
     {
-	    cout << "You beg them for mercy as you are never the fight type.\n";
-	    cout << "They decided to spare you, but in return, you must do them a favor.\n";
-	    cout << "You are require to bring them food every day. DO NOT FORGET THIS.\n";
+	    cout << "Begging for mercy, acknowledging your non-confrontational nature, the stray cats spare you.\n";
+	    cout << "However, they require a daily offering of food as a favor in return, emphasizing the importance\n";
+	    cout << " of fulfilling this obligation without fail. DO NOT FORGET THIS.\n";
     }
 	getchar();
 	cout << "They will help you but you need to bring them food every day until they manage to get some information about your owner. You agree to their request.\n";
@@ -159,13 +166,14 @@ void Script::day1()
 		}
     if(num == 1) {
     	cout << "Food+1\n";
+	cout << "You brush aside the lingering unease you feel about the man and accept his food offering. Rationalizing that he is likely a compassionate young\n";
+	cout << "individual who genuinely cares for vulnerable animals, you hope that your initial misgivings were unfounded and that his intentions are indeed pure.\n";
 	food.push();
 	}
     else
     {
-	    cout << "You, driven by an instinctual surge, heed your gut feeling and unleash a resounding\n";
-	    cout << "hiss in his direction, leaving him utterly astonished. In the wake of his bewilderment,\n";
-	    cout << "you swiftly retreat, vanishing into the distance.\n";
+	    cout << "You, driven by an instinctual surge, heed your gut feeling and unleash a resounding hiss in his direction, leaving him utterly astonished.\n";
+	    cout << "In the wake of his bewilderment, you swiftly retreat, vanishing into the distance.\n";
     }
 	getchar();
 	cout << "After some time, you finally found the best place to rest. It is cramped but at least it is warm enough for you to survive the cold, snowy night.\n";
@@ -180,14 +188,15 @@ void Script::day1()
 			cin >> num;
 		}
     if(num == 1) {
-    	cout << "He is grateful but you lost 1 live because it was cramped and you barely survive the cold night. Lives-1\n";
-	player.deleteLives(1);
+    	cout << "You decide to share the small, cramped shelter with the black cat, who expresses gratitude for your compassionate action. However, throughout the night,\n";
+	cout << "you endure discomfort, resulting in you losing one life. Lives-1\n";
+	player.deleteLives(1);";
 	player.checkLives();
 	}
     else
     {
 	    cout << "Unbothered by the presence of the black cat, you continue your slumber and dismiss his existence.\n";
-	    cout << " A tinge of sadness envelops the black-furred feline, compelling his to depart, his silent footsteps fading into the night.\n";
+	    cout << "A tinge of sadness envelops the black-furred feline, compelling his to depart, his silent footsteps fading into the night.\n";
     }
 	getchar();
 
@@ -216,8 +225,15 @@ void Script::day2()
 		}
     if(num == 1) {
     	coin.push();
+	cout << "You choose to bring the coin along with you on your little adventure today, recognizing its potential\n";
+	cout << "value and significance in the unfolding journey ahead.\n";
     	cout << "Coin+1\n";
 	}
+    else
+    {
+	cout << "Opting not to take the coin with you, you embark on your city adventure today, venturing forth empty-handed\n";
+	cout << "but filled with anticipation for the experiences that lie ahead.\n";
+    }
 	getchar();
 	cout << "You see the old man again. Today too, the music he plays bring back old memories.\n";
 	getchar();
