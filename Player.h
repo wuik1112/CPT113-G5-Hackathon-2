@@ -23,16 +23,14 @@ class Player
 		int countHappy;
 	public:
 		Player();
-    ~Player();
-    void getName(string);
-    string setName();
-    void appendLives(int);
-    void deleteLives();
-    void displayLives();
-    bool checkPlayerStatus();
-    void gameOver();
-    void appendHappiness(int);
-    void displayHappiness();
-    void happinessCount();
+    		~Player();
+    		void getName(string);
+    		string setName();
+		int getLives();
+		void deleteLives();
+		int getHappiness();
+		//bool checkPlayerStatus();
+		void appendHappiness(int);
+		//void happinessCount();
 };
     
