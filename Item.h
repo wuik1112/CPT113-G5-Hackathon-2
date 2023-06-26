@@ -27,7 +27,9 @@ class Item
 		};
 		Food *foodTop;
 		
-		int count;
+		int coinCount;
+		int cardCount;
+		int foodCount;
 		
 	public:
 		Item();
