@@ -52,6 +52,10 @@ void Script::day1()
 	cout << "Happiness+5\n";
 	player.addHappiness(5);
 	}
+    else
+    {
+	cout << "You choose to not put that disgusting-looking food in your digestive system.\n";
+    }
 	getchar();
 	cout << "Before starting your adventure, you also found a coin. Do you take the coin?\n";
 	cout << "1. Take the coin.\n2. Leave it.\n";
