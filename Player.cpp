@@ -42,7 +42,7 @@ int Player::getLives()
 		return false;
 	}
 }*/
-void Player::appendHappiness(int num)
+void Player::addHappiness(int num)
 {
 	countHappy++;
 }
