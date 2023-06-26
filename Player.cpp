@@ -2,10 +2,14 @@ Player::Player()
 {
 	//set initial state
 	name = "";
-	headLives = nullptr;
 	headHappy=nullptr;
-	countLives = 0;
 	countHappy = 0;
+
+	//initial 3 lives to player
+	head->lVal = 1;
+	head->next->lVal = 1;
+	head->next->next->lVal = 1;
+	countLives = 3;
 }
 Player::~Player()
 {
@@ -51,43 +55,9 @@ string Player::setName()
 {
 	return name;
 }
-void Player::appendLives(int num)
+int Player::getLives()
 {
-	Lives *newLive; //point new Live
-	Lives *livePtr; //move through list
 	
-	//allocate new Live and store num
-	newLive = new Lives;
-	newLive->lVal = num;
-	newLive->nextLives = nullptr;
-	
-	//if no node yet in the list		
-  if(!headLives)
-	{
-		headLives = newLive;
-	}
-	else
-	{
-		//initialise livePtr to head of list
-		livePtr = headLives;
-		
-		//find last live
-		while (livePtr->nextLives)
-		{
-			livePtr = livePtr->nextLives;
-		}
-			
-		//if lives in the list is less than 3
-		if(countLives < 3)
-		{
-			livePtr->nextLives = newLive;
-			countLives++;
-		}
-		else //if live reach 3 already
-		{
-			cout << "Max amount of Lives reach.\n";
-	  }
-	}
 }
 void Player::deleteLives()
 {
@@ -101,26 +71,16 @@ void Player::deleteLives()
 	//delete the last node
 	delete livePtr;
 	countLives--;
-	
-	/*if(!checkPlayerStatus())
-	{
-		cout << "YOU DIED" << endl;
-		gameOver
-	}*/
 }
-void Player::displayLives()
-{	
-  cout << "You have " << countLives << " lives left.\n";
-}
-bool Player::checkPlayerStatus()
+/*bool Player::checkPlayerStatus()
 {
 	bool status;
 	if(!headLives && countLives == 0)
 	{
 		return false;
 	}
-}
-void Player::gameOver()
+}*/
+int Player::getHappiness()
 {
 	
 }
@@ -154,11 +114,7 @@ void Player::appendHappiness(int num)
 		countHappy++;
 	}
 }
-void Player::displayHappiness()
-{
-	cout << "You have " << countHappy << " happiness.\n";
-}
-void Player::happinessCount()
+/*void Player::happinessCount()
 {
 	if(countHappy >= 5)
 	{
@@ -168,4 +124,4 @@ void Player::happinessCount()
 	{
 		return;
 	}
-}
+}*/
