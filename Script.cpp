@@ -1,7 +1,7 @@
 #include <iostream>
-#include <Player.h>
-#include <Script.h>
-#include <Game.h>
+#include "Player.h"
+#include "Script.h"
+#include "Game.h"
 
 using namespace std;
 
