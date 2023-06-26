@@ -34,6 +34,9 @@ class Item
 	public:
 		Item();
 		~Item();
+		int getCoinCount();
+		int getCardCount();
+		int getFoodCount();
 		void PushCoin(int);
 		void PushCard(int);
 		void PushFood(int);
