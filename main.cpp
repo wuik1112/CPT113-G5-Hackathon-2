@@ -50,6 +50,9 @@ int main()
     if(num == 1) {
     	coin.pop();
 	cout << "Coin-1\n";
+	cout << "He is very happy to see a feline offers him a coin. He pats you and you are very happy.\n";
+	cout << "Happiness+10\n";
+	happiness += 10;
 	}
 	getchar();
     
@@ -64,6 +67,8 @@ int main()
 		}
     if(num == 1) {
     	lives = lives - 1;
+	cout << " -1 live but you win. the stray cats accept their defeat and will listen to your request.\n";
+	     << "You want them to help you find clues to reunite with Emily.\n";
     	cout << "Lives-1\n";
 	player.checkLives();
 	}
@@ -128,6 +133,8 @@ int main()
     if(num == 1) {
     	coin.pop();
     	cout << "Coin-1\n";
+	cout << "He is very happy and today, he gives you some food. Happiness+10\n";
+	happiness += 10;
 	}
 	getchar();
     
@@ -157,6 +164,7 @@ int main()
     
     else {
     	food.pop();
+	cout << "Food-1\n";
     	cout << "You give them the food and they looks very happy.";
 	}
 	getchar();
@@ -176,6 +184,7 @@ int main()
 		}
     if(num == 1) {
     	food.push();
+	cout << "Food+1\n";
 	}
 	getchar();
     
@@ -189,6 +198,7 @@ int main()
     
     else {
     	food.pop();
+	cout << "Food-1\n";
     	cout << "You give them the food and they tell you some good news.";
 	}
 	getchar();
