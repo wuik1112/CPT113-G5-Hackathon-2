@@ -40,5 +40,7 @@ class Item
 		void PopCoin(int);
 		void PopFood(int);
 		void PopCard(int);
-		bool isEmpty();
+		bool isCoinEmpty();
+		bool isCardEmpty();
+		bool isFoodEmpty();
 };
