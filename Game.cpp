@@ -21,7 +21,7 @@ void Game::startGame()
 {
 	string name;
 	
-	cout << "Welcome to our game, 'Kitty: Far From Home'. " << endl;
+	cout << "Welcome to our game, 'Feline: Far From Home'. " << endl;
 	getchar(); 
 	cout << "This is a story about a kitten lost its owner." << endl
 	     << "You need to make decision for each condition to help the kitten reunites with its owner. " << endl;
@@ -48,8 +48,17 @@ void Game::saveProgress(script.getCurrentChapter())
     ofstream outputFile("progress.txt");
 
 	if (outputFile.is_open()) {
+		// write the player info into the file
+		outputFile << player.getName() << endl;
+		outputFile << player.getLives() << endl;
+		outputFile << player.getHappiness() << endl;
+		// write the items hold by player into the file
+		outputFile << item.getCoinCount() << endl;
+		outputFile << item.getFoodCount() << endl;
+		outputFile << item.getCardCount() << endl; 
 		// write the current chapter to text file
-        outputFile << script.getCurrentChapter() << endl ;
+        	outputFile << script.getCurrentChapter() << endl; 
+		
 		outputFile.close();  // Close the text file
         
 		cout << endl << "Progress saved successfully! " << endl;
@@ -58,8 +67,6 @@ void Game::saveProgress(script.getCurrentChapter())
         cout << endl << "Failed to save the progress." << endl;
     }
 }
-
-
 
 // Load progress from text file
 void Game::loadProgress()
@@ -71,7 +78,7 @@ void Game::loadProgress()
         int current;
 		
 		// the last line in the progress.txt is the latest progress
-        while (getline(inFile, current)) 
+        while (getline(inFile, data)) 
 		{
             script.setCurrentChapter(current);
         }
