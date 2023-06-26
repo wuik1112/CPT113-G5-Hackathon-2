@@ -335,7 +335,7 @@ void Script::day3()
 	cout << "What could it be? Hm. You don't bother too much and walk towards him.\n";
 	getchar();
 	cout << "He sees you and greets you happily. As usual, he gives you some food. Accept it or not?\n";
-	cout << "1. Accept the food.\n2. You really dislike him so you run away\n";
+	cout << "1. Accept.\n2. Run away\n";
     cout << "Please enter your choice: ";
     cin >> num;
     while (num != 1 && num != 2) {
@@ -346,8 +346,14 @@ void Script::day3()
     if(num == 1) {
 	//RAZIQIN STOPPED HERE
     	food.PushFood();
+	cout << "Given his improved mood today, you decide to accept the food graciously, recognizing the opportunity\n";
+	cout << "to satisfy your hunger in a more amicable atmosphere.\n";
 	cout << "Food+1\n";
 	}
+    else
+    {
+	    cout << "you firmly decline to partake of the food. Instead, driven by your deep dislike, you swiftly make the decision to flee from his presence\n";
+    }
 	getchar();
 	cout << "You go to the strange alleyway again. Today, the stray cats appear unusually excited, as if something extraordinary has happened.\n";
 	getchar();
@@ -356,23 +362,24 @@ void Script::day3()
 	cout << "As usual, they ask you for today's food.\n";
 	getchar();
 	if (food.isFoodEmpty()) {
-    	cout << "They realised you didn't bring any food. You were warned.\n";
-    	cout << "Lives-2\n";
-    	player.deleteLives(2);
+    	cout << "They realize that you haven't brought any food as agreed, and their dissatisfaction becomes apparent. You were warned.\n";
+    	cout << "Lives-3\n";
+    	player.deleteLives(3);
 	player.checkLives();
 	}
     
     else {
-    	food.pop();
+    	food.PopFood();
 	cout << "Food-1\n";
-    	cout << "You give them the food and they tell you some good news.";
+    	cout << "You offer them the food, and they gratefully accept it, their satisfaction evident in their reactions.\n";
+	cout << "In addition to their contentment, they have some promising news to share with you regarding Emily.\n";
 	}
 	getchar();
 	cout << "They give you a card. Card+1, Happiness+15\nYou take it and have a look.\n";
 	player.addHappiness(15);
-	card.push();
+	card.PushCard();
 	getchar();
-	cout << "On the card, there's Emily's face. That's all you understand. You're a cat. You cannot read.\n";
+	cout << "On the card, there's Emily's face. That's all you understand. You're a cat afterall. You cannot read.\n";
 	getchar();
 	cout << "But you're happy anyways. This marks the end of your business with the stray cats.\nYou go find a place to rest that night.\n";
 	getchar();
@@ -389,7 +396,7 @@ void Script::day4()
 	setCurrentChapter(4);
 	
 	cout << "You're woken up by some weird smell. Investigate or not?\n";
-	cout << "1. Investigate.\n2. Ignore it and walk away.\n";
+	cout << "1. Investigate.\n2. Ignore it\n";
 	cout << "Please enter your choice: ";
 	cin >> num;
 	while (num != 1 && num != 2) {
