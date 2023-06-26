@@ -2,7 +2,7 @@
 using namespace std;
 
 // Day type definition
-typedef void (*DayPointer)();
+typedef void (Script::*DayPointer)();
 
 // Node structure for the linked list
 struct DayNode {
@@ -34,13 +34,13 @@ public:
     }
 
     // Invoke all days in the list
-    void invokeAllDays(int d) {
+    void invokeAllDays(Script& script, int d) {
         DayNode* current = head;
         for (int i=1; i<d; i++) {
           current = current->next;
         }
         while (current != nullptr) {
-            current->day();
+            (script.*(current->day))();
             current = current->next;
         }
     }
