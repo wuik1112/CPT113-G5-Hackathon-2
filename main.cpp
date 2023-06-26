@@ -1,8 +1,8 @@
 #include <iostream>
-#include "Player.cpp"
-#include "Game.cpp"
-#include "Script.cpp"
-#include "DayList.cpp"
+#include "Player.h"
+#include "Item.h"
+#include "Game.h"
+#include "Script.h"
 
 using namespace std;
 
