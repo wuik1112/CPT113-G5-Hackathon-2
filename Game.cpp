@@ -120,7 +120,7 @@ void Game::loadProgress()
 					break;
 				}
 			}
-			
+		i++;
 		}
 		inFile.close();
 	} else {
