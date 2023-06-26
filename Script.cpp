@@ -84,11 +84,16 @@ void Script::day1()
 			cin >> num;
 		}
     if(num == 1) {
-    	coin.push();
+    	coin.PushCoin();
 	cout << "Despite being a cat, you take the coin anyways.\n";
 	cout << "It might be useful later hehe.\n";
 	cout << "Coin+1\n";
 	}
+    else
+    {
+	    cout << "Being a cat, you decide to not take the coin. Why would you be bothered by human currency anyways?\n";
+	    cout << "Human's laws don't apply to you.\n";
+    }
 	getchar();
 	cout << "You walk out of the alleyway into the busy city. As you walk, you see an old man who is a street performance.\n";
 	getchar();
@@ -104,7 +109,7 @@ void Script::day1()
 			cin >> num;
 		}
     if(num == 1) {
-    	coin.pop();
+    	coin.PopCoin();
 	cout << "Coin-1\n";
 	cout << "He is delighted to see a feline present him with a glimmering coin. The warmth of his gentle hand patting you\n";
 	cout << "fills your heart with sheer happiness.\n";
@@ -145,6 +150,7 @@ void Script::day1()
 	    cout << "Begging for mercy, acknowledging your non-confrontational nature, the stray cats spare you.\n";
 	    cout << "However, they require a daily offering of food as a favor in return, emphasizing the importance\n";
 	    cout << " of fulfilling this obligation without fail. DO NOT FORGET THIS.\n";
+	    cout << "You also ask them for a favor to help you reunited with your beloved Emily.\n";
     }
 	getchar();
 	cout << "They will help you but you need to bring them food every day until they manage to get some information about your owner. You agree to their request.\n";
@@ -168,7 +174,7 @@ void Script::day1()
     	cout << "Food+1\n";
 	cout << "You brush aside the lingering unease you feel about the man and accept his food offering. Rationalizing that he is likely a compassionate young\n";
 	cout << "individual who genuinely cares for vulnerable animals, you hope that your initial misgivings were unfounded and that his intentions are indeed pure.\n";
-	food.push();
+	food.PushFood();
 	}
     else
     {
@@ -224,7 +230,7 @@ void Script::day2()
 			cin >> num;
 		}
     if(num == 1) {
-    	coin.push();
+    	coin.PushCoin();
 	cout << "You choose to bring the coin along with you on your little adventure today, recognizing its potential\n";
 	cout << "value and significance in the unfolding journey ahead.\n";
     	cout << "Coin+1\n";
@@ -238,7 +244,7 @@ void Script::day2()
 	cout << "You see the old man again. Today too, the music he plays bring back old memories.\n";
 	getchar();
 	cout << "You walk to him. Give him the coin or not?\n";
-	 cout << "1. Give him the coin. \n2. Just listen to the music quietly.\n";
+	 cout << "1. Give him the coin. \n2. Just watch and listen from afar\n";
     cout << "Please enter your choice: ";
     cin >> num;
     while (num != 1 && num != 2) {
@@ -247,12 +253,19 @@ void Script::day2()
 			cin >> num;
 		}
     if(num == 1) {
-    	coin.pop();
+    	coin.PopCoin();
     	cout << "Coin-1\n";
-	cout << "He is very happy and today, he gives you some food. Food+1, Happiness+10\n";
-	food.push();
+	cout << "Encountering him once more today, his face lights up with sheer delight when he sees you. His happiness intensifies\n";
+	cout << "as you offer him the coin.As a token of his appreciation, he expresses his gratitude by presenting you with food.\n";
+	cout << "Food+1, Happiness+10\n";
+	food.PushFood();
 	player.addHappiness(10);
 	}
+    else
+    {
+	    cout << "Deciding against approaching the sweet old man today, you instead opt to observe him from a distance,\n";
+	    cout << "allowing yourself the opportunity to quietly watch and listen to his presence.\n";
+    }
 	getchar();
 	cout << "You stroll around and see the strange man again. Today, something is really suspicious with him.\n";
 	getchar();
@@ -268,26 +281,33 @@ void Script::day2()
 			cin >> num;
 		}
     if(num == 1) {
-    	food.push();
+    	food.PushFood();
+	cout << "Despite sensing his anger, you decide to pretend not to notice and accept the food, prioritizing\n";
+	cout << "the filling of your hungry stomach for the time being.\n";
     	cout << "Food+1\n";
 	}
+    else
+    {
+	    cout << "No matter what, you cannot shake off the discomfort you feel in the presence of this man, and it only\n";
+	    cout << "intensifies as you witness his worsening temper today. Thus, you hiss at him as a defense mechanism and escape.\n"
+    }
 	getchar();
 	cout << "You go all the way to the strange alley in hope for some update on Emily's whereabout.\n";
 	getchar();
 	cout << "When you enter the alley, the cats look at you and ask you for today's portion of food.\n";
 	getchar();
-	 if (food.isEmpty()) {
-    	cout << "Oh no! You don't have enough food for the cats.\n";
-    	cout << "The cats seem angry to you. They decide to give you some punishments.\n";
-    	cout << "You have lost 3 lives.\n";
-    	player.deleteLives(3);
-	player.checkLives();
+	if (food.isEmpty()) {
+    		cout << "Oh no! With no food left to offer them, their dissatisfaction becomes evident,\n";
+    		cout << "and they decide to inflict punishment upon you. As a consequence,\n";
+    		cout << "you tragically lose three lives in the process.\n";
+    		player.deleteLives(3);
+		player.checkLives();
 	}
     
-    else {
-    	food.pop();
-	cout << "Food-1\n";
-    	cout << "You give them the food and they looks very happy.";
+    	else {
+    		food.PopFood();
+		cout << "Food-1\n";
+    		cout << "As you offer them the food, they receive it with great joy and appreciation, their happiness evident in their reactions to your generous gesture.\n";
 	}
 	getchar();
 	cout << "However, they still need some times to find clues. You're a bit disappointed and walk away.\n";
@@ -324,7 +344,8 @@ void Script::day3()
 			cin >> num;
 		}
     if(num == 1) {
-    	food.push();
+	//RAZIQIN STOPPED HERE
+    	food.PushFood();
 	cout << "Food+1\n";
 	}
 	getchar();
