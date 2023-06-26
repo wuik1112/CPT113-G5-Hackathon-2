@@ -7,19 +7,7 @@ class Player
 {
 	private:
 		string name;
-		struct Lives
-		{
-			int lVal;
-			struct Lives *nextLives;
-		};
-		Lives *headLives;
 		int countLives;
-		struct Happiness
-		{
-			int hVal;
-			struct Happiness *nextHappy;
-		};
-		Happiness *headHappy;
 		int countHappy;
 	public:
 		Player();
@@ -29,8 +17,8 @@ class Player
 		int getLives();
 		void deleteLives();
 		int getHappiness();
+		void addHappiness(int);
 		//bool checkPlayerStatus();
-		void appendHappiness(int);
 		//void happinessCount();
 };
     
