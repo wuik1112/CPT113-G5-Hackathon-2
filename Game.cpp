@@ -37,7 +37,7 @@ void Game::saveProgress(int currentChapter)
 
 	if (outputFile.is_open()) {
 		// write the current chapter to text file
-        outputFile << currentChapter << endl ;
+        outputFile << game.getCurrentChapter() << endl ;
 		outputFile.close();  // Close the text file
         
 		cout << endl << "Progress saved successfully! " << endl;
@@ -123,7 +123,7 @@ void Game::continueGame()
 	switch (num)
 	{
 		case 1:
-			saveProgress();
+			saveProgress(game.getCurrentChapter());
 		case 2: 
 			quitGame();
 	}
@@ -134,7 +134,7 @@ void Game::quitGame()
 {
 	cout << "Quiting the game..." << endl;
 	// Automatically save the progress before quiting the game
-	saveProgress();
+	saveProgress(game.getCurrentChapter());
 	// Exit the program
 	exit(0);
 	cout << "Game exited. " << endl;
