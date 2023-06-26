@@ -25,39 +25,35 @@ string Player::getName()
 {
 	return name;
 }
-void Player::deleteLives()
+void Player::deleteLives(int num)
 {
 	//lose lives
-	countLives--;
+	countLives = countLives - num;
 }
+
 int Player::getLives()
 {
 	return countLives;
 }
-/*bool Player::checkPlayerStatus()
-{
-	bool status;
-	if(!headLives && countLives == 0)
-	{
-		return false;
-	}
-}*/
+
 void Player::addHappiness(int num)
 {
-	countHappy++;
+	countHappy = countHappy + num;
 }
 int Player::getHappiness()
 {
 	return countHappiness;
 }
-/*void Player::happinessCount()
+
+// call if player lives less than and equal to 0
+void Player::checkLives()
 {
-	if(countHappy >= 5)
-	{
-		//TrueEnding();
-	}
-	else
-	{
+	if (countLives > 0)
 		return;
+	else if (countLives <= 0)
+	{
+		cout << "Unfortunately, you have exhausted all of your lives." << endl;
+		cout << "Your journey ends here...Game Over. "<<endl;
+		game.quitGame();
 	}
-}*/
+}
