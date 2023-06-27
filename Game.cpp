@@ -1,5 +1,3 @@
-%%writefile Game.cpp
-
 #include <iostream>
 #include <fstream> // multiple file inclusion
 #include <string>
@@ -20,6 +18,8 @@ Game::~Game()
 {
 
 }
+
+
 
 //Start a new game
 void Game::startGame()
@@ -46,6 +46,7 @@ void Game::startGame()
 
 	script.day1();
 }
+
 
 
 //Save progress to text file
@@ -174,11 +175,13 @@ void Game::deleteProgress()
 
 	if (deleteFile.is_open())
      {
-        	deleteFile.close();
-		cout << "Progress deleted. " << endl;
+        deleteFile.close();
+	    	cout << "Progress deleted. " << endl;
      } else
      		cout << "Failed to delete the progress. " << endl;
  }
+
+
 
 // Ask player to continue or quit game
 void Game::continueGame()
@@ -227,6 +230,8 @@ void Game::quitGame()
 	// Exit the program
 	exit(0);
 }
+
+
 
 // Back to main menu
 void Game::backToMainMenu()
@@ -290,18 +295,17 @@ void Game::backToMainMenu()
 		{
 			//how to play
 			ifstream inputFile("Gameplay.txt");
-    
-    			if (inputFile.is_open())
-			{
-     				string line;
-      				while (getline(inputFile, line))
+
+    	if (inputFile.is_open()) {
+     	string line;
+      	while (getline(inputFile, line))
 				{
-          				cout << line << endl;
-       				}
-      				inputFile.close();
-    			} else {
-      				cout << "Unable to open the gameplay file." << endl;
-    			}
+          cout << line << endl;
+        }
+      	inputFile.close();
+    	} else {
+      	cout << "Unable to open the gameplay file." << endl;
+    	}
 			getchar();
 			cout << "Returning to Main Menu...\n";
 			backToMainMenu();
