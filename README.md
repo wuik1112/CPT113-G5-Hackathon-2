@@ -1,4 +1,4 @@
-# CPT113-G5-Hackathon-2
+# CPT113 Group 5 Hackathon 2
 ### Members 
 
 Khoo Iu Wan
