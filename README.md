@@ -1,7 +1,10 @@
 # CPT113-G5-Hackathon-2
 Members: 
+
 Khoo Iu Wan
+
 Loo Jia Xin
+
 Raziqin Husna binti Abdul Wahid
 
 #### Description of your game.
