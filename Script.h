@@ -1,22 +1,26 @@
+#ifndef SCRIPT_H
+#define SCRIPT_H
+
 #include <iostream>
 #include "Player.h"
-#include "Game.h"
+#include "Item.h"
 
 using namespace std;
 
 const int MAX_HAPPINESS = 30;
 
+class Game;
+
 class Script
 {
 	private:
 		Player player;
-		Game game;
-		Item food;
-		Item coin;
-		Item card;
-		int *ending; 
-		int *currentChapter;
-		
+		Game* game;
+		Item item;
+		int ending;
+		int currentChapter;
+    int num;
+
 	public:
 		// Constructor
 		Script();
@@ -25,7 +29,7 @@ class Script
 		void setEnding(int end);
 		int getEnding();
 		// to record the chapter ongoing
-		void setCurentChapter(int currentChapter);
+		void setCurrentChapter(int currentChapter);
 		int getCurrentChapter();
 		// to display the corresponding story
 		void day1();
@@ -42,3 +46,5 @@ class Script
 		// call if player lives less than and equal to 0
 		void checkLives();
 };
+
+#endif
