@@ -45,6 +45,14 @@ Your choices shape the outcome, offering replayability and exploration.
 
 ### How to play our game
 
+The game presents you with various scenarios and choices. Read the descriptions and options carefully before making a decision. Use the provided menu options or enter the corresponding numbers to select your choice. Your choices will affect the kitten's lives, happiness, and the overall story progression. Your main objective is to guide the kitten through different challenges and help it find its way back to its owner. Along the way, you may encounter obstacles, make friends, collect items, and face difficult decisions.
+
+The kitten has a limited number of lives. If you make poor choices or encounter dangerous situations, you may lose lives. Be mindful of the kitten's happiness level. Positive actions and choices can increase its happiness. If the kitten loses all its lives, the game will end. Throughout the game, you can acquire various items such as coins, food, and cards. These items may be useful in specific situations or can be used to interact with characters or the environment. Manage your inventory wisely and use items strategically to progress in the story.
+
+The progress will be automatically saved when you finish a chapter or you choose to quit the game. You can load your previous progress in the main menu. If you wish to exit the game, choose the "Quit" option from the main menu or after each chapter.
+
+There are multiple story paths and endings in the game. Feel free to experiment with different choices and explore different outcomes.
+
 ### How object-oriented concepts were used to develop our game
 **Encapsulation:**
 
