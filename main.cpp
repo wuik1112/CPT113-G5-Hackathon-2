@@ -1,3 +1,5 @@
+%%writefile main.cpp
+
 #include <iostream>
 #include "Player.h"
 #include "Item.h"
@@ -62,6 +64,7 @@ int main()
 			{
 				cout << "Returning to Main Menu...\n";
 				// function to return to main menu
+				game.backToMainMenu();
 			}
 			else
 			{
@@ -73,25 +76,35 @@ int main()
 		}
 		case 3:
 		{
-			//how to play
-			cout << "HOW TO PLAY\n";
-			cout << "------------------\n";
-			cout << "You are paying as a tabby orange cat. You have to make a choice for the cat to survive in an unfamiliar outside world.\n";
-			cout << "Remember, all choices and steps you make, there will be consequences.\n";
-			cout << "Choose wisely.\n";
-			cout << "Press ENTER to back to main menu.\n";
+			ifstream inputFile("Gameplay.txt");
+    
+    	if (inputFile.is_open()) {
+        string line;
+        while (getline(inputFile, line))
+				{
+            cout << line << endl;
+        }
+        inputFile.close();
+    	} else {
+        cout << "Unable to open the gameplay file." << endl;
+    	}
 			getchar();
+			cout << "Returning to Main Menu...\n";
 			game.backToMainMenu();
 			break;
 		}
 		case 4:
 		{
 			// Credits of contributor of the game
+			cout << "CREDITS\n";
+			cout << "--------------------\n";
 			cout << "Game Developers: \n";
 			cout << "Khoo Iu Wan\nLoo Jia Xin\nRaziqin Husna Binti Abdul Wahid\n";
 			cout << "Special Thanks to: \n";
 			cout << "Dr. Teh Je Sen\nDr Nur Hana Samsudin\nDr Siti Hazyanti Mohd Hashim\n";
-			cout << "All Gratitude Toward OYEN For Game Inspiration!!\n\n";
+			cout << "-----*------*-------*------*-------*------*------*------\n";
+			cout << "All Gratitude Toward OYEN For Game Inspiration!!\n";
+			cout << "-----*------*-------*------*-------*------*------*------\n\n";
 			cout << "Do you want to back to main menu?\n";
 			cout << "1. Yes\n2. No\n";
 			cout << "Please enter your choice: ";
