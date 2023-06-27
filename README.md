@@ -19,30 +19,38 @@ Drawing inspiration from the real-life story of Oyen, the cherished orange cat o
 Join us in this immersive adventure, where the loyalty of a cat shines bright, and the profound love between humans and their feline friends is celebrated in all its glory.
 
 ### Features of our game
-__Engaging Text-Based Adventure:__ 
-
-Experience an immersive journey through captivating text and interactive storytelling.
 
 __Emotional Decision-Making:__ 
 
 Shape the cat's fate through your choices, reflecting its loyalty and love for its human.
 
-__Diverse Encounters:__
-
-Meet unique characters and animals, forging meaningful connections along the way.
-
 __Heartwarming Narrative:__ 
 
 Explore the deep bond between cats and humans as the cat overcomes challenges to find its human.
-
-__Character Progression:__
-
-Witness the cat's growth, unlocking abilities and deepening relationships.
 
 __Multiple Endings:__ 
 
 Your choices shape the outcome, offering replayability and exploration.
 
+1. **Main Menu**: The main menu serves as the starting point for the player and presents different options to choose from.
+
+2. **Start a New Game**: This feature allows the player to begin a new game by entering a name for the kitten character. It also displays initial information such as lives and happiness, which likely represent the health and emotional-state of the kitten.
+
+3. **Continue Game**: When the player selects this option, they are prompted to decide whether they want to continue to the next chapter or quit the game. If they choose to continue, their progress is saved, and the next chapter of the story is displayed. If they choose to quit, the game saves their progress and exits.
+
+4. **Quit Game**: This feature enables the player to exit the game at any time. Before quitting, the game automatically saves the player's progress to ensure they can resume from where they left off.
+
+5. **Save Progress**: The save progress feature allows automatically saving progress in the game. It writes the player's information, including their name, lives, and happiness, as well as the conditions of any items they possess, and the current chapter they are on, to a text file. This way, players can come back to the game and continue their journey at a later time.
+
+6. **Load Progress**: This feature allows players to load their previously saved progress from a text file. It retrieves the player's information, such as their name, lives, and happiness, as well as the conditions of the items they possess, and the current chapter they were on when they last saved. By loading progress, players can continue playing from where they left off.
+
+7. **Delete Progress**: This feature gives players the option to delete their saved progress from the text file. Choosing this option clears the saved content, allowing them to start a fresh game if they wish.
+
+8. **Player Information**: The player information represents the attributes and characteristics of the kitten character controlled by the player. It includes their name, lives (representing the number of chances or retries the player has), and happiness (likely a measure of the kitten's emotional state).
+
+9. **Item Conditions**: This feature represents the conditions or states of various items within the game. The items could include coins, food, and cards. The item conditions could indicate the quantity or availability of these items, which may impact the gameplay and choices available to the player.
+
+10. **Progress through Chapters**: The game progresses through different chapters, which likely represent different stages or sections of the story. Each chapter introduces new challenges, choices, and events for the player to navigate. 
 ### How to play our game
 
 The game presents you with various scenarios and choices. Read the descriptions and options carefully before making a decision. Use the provided menu options or enter the corresponding numbers to select your choice. Your choices will affect the kitten's lives, happiness, and the overall story progression. Your main objective is to guide the kitten through different challenges and help it find its way back to its owner. Along the way, you may encounter obstacles, make friends, collect items, and face difficult decisions.
