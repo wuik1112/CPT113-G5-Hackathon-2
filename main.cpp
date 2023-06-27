@@ -1,5 +1,3 @@
-%%writefile main.cpp
-
 #include <iostream>
 #include "Player.h"
 #include "Item.h"
@@ -77,17 +75,15 @@ int main()
 		case 3:
 		{
 			ifstream inputFile("Gameplay.txt");
-    
-    			if (inputFile.is_open()) 
-			{
+
+    			if (inputFile.is_open()) {
         			string line;
         			while (getline(inputFile, line))
 				{
-            				cout << line << endl;
-        			}
+            			cout << line << endl;
+        		}
         		inputFile.close();
-    			} else 
-			{
+    			} else {
         			cout << "Unable to open the gameplay file." << endl;
     			}
 			getchar();
