@@ -139,33 +139,25 @@ void Game::loadProgress()
 	{
 		case 1:
 		{
-			script.day1();
+			script.day2();
 			break;
 		}
 		case 2:
 		{
-			script.day2();
+			script.day3();
 			break;
 		}
 		case 3:
 		{
-			script.day3();
-			break;
-		}
-		case 4:
-		{
 			script.day4();
 			break;
 		}
-		case 5:
+		case 4:
 		{
 			script.day5();
 			break;
 		}
 	}
-
-	 // after display the current chapter, delete the content in text file to prevent future confusion
-	 deleteProgress();
 }
 
 void Game::deleteProgress()
@@ -209,7 +201,7 @@ void Game::continueGame()
 	{
 		case 1:
 		{
-			saveProgress();
+			return;
 			break;
 		}
 		case 2:
