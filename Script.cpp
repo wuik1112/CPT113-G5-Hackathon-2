@@ -20,8 +20,6 @@ Script::~Script()
 	setEnding(0);
 }
 
-
-
 // Ending type
 void Script::setEnding(int end)
 {
@@ -32,8 +30,6 @@ int Script::getEnding()
 {
 	return ending;
 }
-
-
 
 // Current Chapter
 void Script::setCurrentChapter(int currentChp)
@@ -46,12 +42,10 @@ int Script::getCurrentChapter()
 	return currentChapter;
 }
 
-
-
 void Script::day1()
 {
 	setCurrentChapter(1);
-
+	game = new Game;
 	cout << "DAY 1\n";
 	cout << "--------------------------------------------------------------------\n";
 	cout << "You wake up from your sleep and you are wondering what are you doing there. Then, you recall what happened yesterday.\n";
@@ -215,9 +209,10 @@ void Script::day1()
     }
 	getchar();
 
-	// ask if player would like to continue
+	// save the progress in the end of every chapter
+	game->saveProgress();
+	// ask if player would like to continue or exit the game
 	game->continueGame();
-	// exit program if player choose to exit
 	// call next chapter if the player want to continue
 	day2();
 }
@@ -327,13 +322,13 @@ void Script::day2()
 	cout << "You find some shelter to rest that night. You should be happy you're alive but somehow today, you feel so uneasy.\n";
 	getchar();
 
-	// ask if player would like to continue
+	game->saveProgress();
+	// ask if player would like to continue or exit the game
 	game->continueGame();
-	// exit program if player choose to exit
+	
 	// call next chapter if the player want to continue
 	day3();
 }
-
 
 void Script::day3()
 {
@@ -399,6 +394,7 @@ void Script::day3()
 	cout << "But you're happy anyways. This marks the end of your business with the stray cats.\nYou go find a place to rest that night.\n";
 	getchar();
 
+	game->saveProgress();
 	// ask if player would like to continue
 	game->continueGame();
 	// exit program if player choose to exit
@@ -484,13 +480,12 @@ void Script::day4()
 		getchar();
 	}
 
+	game->saveProgress();
 	// ask if player would like to continue
 	game->continueGame();
-	// exit program if player choose to exit
 	// call next chapter if the player want to continue
 	day5();
 }
-
 
 void Script::day5()
 {
@@ -553,15 +548,13 @@ void Script::day5()
 	ending2();
 }
 
-
-
 // display the endings depends on player choice
 void Script::ending1()
 {
 	setEnding(1);
 
 	cout << "You have been adopted by the old man. " << endl;
-	cout << "The old man treats you very well, providing you with food, shelter, and gentle caresses. ";
+	cout << "The old man treats you very well, providing you with food, shelter, and gentle caresses. " << endl;
 	getchar();
 	cout << "However, deep inside your heart, there still resides that one person, and you wonder where she could be.";
 	cout << "You think about whether there is a chance in your lifetime to find her. " << endl;
@@ -569,48 +562,50 @@ void Script::ending1()
 	getchar();
 	cout << "And so, day after day, year after year, you reach the end of your life. " << endl;
 	cout << "The old man is heartbroken, as you had been his sole companion for such a long time. He hold onto you tightly, reluctant to let go." << endl;
-	cout << "In your final moments, you muster all your remaining strength to give the old man a gentle lick. ";
+	cout << "In your final moments, you muster all your remaining strength to give the old man a gentle lick. " << endl;
 	getchar();
 	cout << "You closed your eyes and lose your breath. ";
 	getchar();
 
 	// check if there is a secret ending
 	secretEnding();
-
+	// delete progress when the game is end
+	game->deleteProgress();
 	game->quitGame();
 }
+
 
 // Ending 2: Found out Emily die of suicide at bathroom
 void Script::ending2()
 {
 	setEnding(2);
 
-	cout << "When you enter the bathroom, you see Emily lying on the floor. ";
+	cout << "When you enter the bathroom, you see Emily lying on the floor. " << endl;
 	getchar();
-	cout << "Why is she sleeping here? ";
+	cout << "Why is she sleeping here? " << endl;
 	getchar();
 	cout << "You walk toward her and you see the pool of blood under her right hand. On her hand, there are a few deep scratch marks. " << endl
-		 << "You don't remember giving this scar on her. Also, even though you scratch her at times, but you'll never scratch this deep. ";
+		<< "You don't remember giving this scar on her. Also, even though you scratch her at times, but you'll never scratch this deep. " << endl;
 	getchar();
-	cout << "Huh. ";
+	cout << "Huh. " << endl;
 	getchar();
-	cout << "You meow at her and she didn't reply. She just lies there. Lifeless. ";
+	cout << "You meow at her and she didn't reply. She just lies there. Lifeless. " << endl;
 	getchar();
-	cout << "Lifeless? ";
+	cout << "Lifeless? " << endl;
 	getchar();
-	cout << "No way. ";
+	cout << "No way. " << endl;
 	getchar();
-	cout << "No! It can't be! ";
+	cout << "No! It can't be! " << endl;
 	getchar();
 	cout << "You try over and over again to wake her up but to no avail. " << endl
 		 << "You finally come to the conclusion and acceptance that Emily is no longer in this world. " << endl
 		 << "But you don't dare to leave her alone like that. " << endl
-		 << "After leaving her behind for so long now you have to part ways again...? ";
+		 << "After leaving her behind for so long now you have to part ways again...? " << endl;
 	getchar();
-	cout << "No way. ";
+	cout << "No way. " << endl;
 	getchar();
 	cout << "You stay by her side. You love her too much. You want to be loyal to her and only her. " << endl
-		 << "You  stay there. With nothing to eat or drink. " << endl;
+		 << "You stay there. With nothing to eat or drink. " << endl;
 	getchar();
 	cout << "Days and weeks pass by. You feel your body weakened. You no longer can get up and walk. " << endl
 		 << "You feel your eyes are getting heavier and heavier before you finally close your eyes and never open them again. " << endl;
@@ -618,7 +613,7 @@ void Script::ending2()
 
 	// check if there is a secret ending
 	secretEnding();
-
+	game->deleteProgress();
 	game->quitGame();
 }
 
@@ -627,17 +622,17 @@ void Script::ending3()
 {
 	setEnding(3);
 
-	cout << "You choose to live as a stray and not trusting or giving your loyalty to human as easily as before. ";
+	cout << "You choose to live as a stray and not trusting or giving your loyalty to human as easily as before. " << endl;
 	getchar();
 	cout << "You live your days alone in the alley. You slowly grow more and more sick. " << endl;
-	cout << "You develop a lot of illness such as ringworm and fips. ";
+	cout << "You develop a lot of illness such as ringworm and fips. " << endl;
 	getchar();
-	cout << "You finally breath your final breath after a year as the sickness worsen... ";
+	cout << "You finally breath your final breath after a year as the sickness worsen... " << endl;
 	getchar();
 
 	// check if there is a secret ending
 	secretEnding();
-
+	game->deleteProgress();
 	game->quitGame();
 }
 
@@ -680,19 +675,19 @@ void Script::secretEnding()
 			{
 				cout << "You find yourself in a darkened world, but a distant light catches your eye. " << endl
 					 << "Intrigued, you move towards it, and it gradually engulfs the darkness, revealing a serene sight. " << endl
-					 << "The sky above is a calming blue, surrounded by beautiful flowers. ";
+					 << "The sky above is a calming blue, surrounded by beautiful flowers. " << endl;
 				getchar();
 				cout << "As you take it all in, a familiar tune reaches your ears, accompanied by a voice you know so well. " << endl
-					 << "You look around and spot her in the midst of the flowerbed. ";
+					 << "You look around and spot her in the midst of the flowerbed. " << endl;
 				getchar();
-				cout << "Emily. Is it really her? ";
+				cout << "Emily. Is it really her? " << endl;
 				getchar();
-				cout << "You approach hesitantly, and she greets you with a heartfelt apology. ";
+				cout << "You approach hesitantly, and she greets you with a heartfelt apology. " << endl;
 				getchar();
 				cout << player.getName() << "...Do you recognise me? I miss you so much.. " << endl
-					 << "Come here. " << player.getName() << "I love you. I am sorry...I promise I wouldn't left you alone again. ";
+					 << "Come here. " << player.getName() << "I love you. I am sorry...I promise I wouldn't left you alone again. " << endl;
 				getchar();
-				cout << "Overwhelmed, you embrace each other tightly, immersed in a moment filled with love and reunion. ";
+				cout << "Overwhelmed, you embrace each other tightly, immersed in a moment filled with love and reunion. " << endl;
 				getchar();
 
 				cout << "Congratulation! You have successfully achieved Secret Ending 1! " << endl ;
@@ -701,17 +696,17 @@ void Script::secretEnding()
 			// secret ending after END2 if player happiness is achieved
 			case 2:
 			{
-				cout << player.getName() << "! " << player.getName() <<"! ";
+				cout << player.getName() << "! " << player.getName() <<"! " << endl;
 				getchar();
 				cout<< "You hear a voice calling you. " << endl;
-				cout << "Your eyes stinging from the brightness. You woke up in a daze. ";
+				cout << "Your eyes stinging from the brightness. You woke up in a daze. " << endl;
 				getchar();
-				cout << "Is this heaven? ";
+				cout << "Is this heaven? " << endl;
 				getchar();
 				cout << "You look around, the room layout is so familiar.\n";
-				cout << "You find a person standing right in front of you. ";
+				cout << "You find a person standing right in front of you. " << endl;
 				getchar();
-				cout << "You just cannot believe your eyes! Here she is, your owner, Emily!";
+				cout << "You just cannot believe your eyes! Here she is, your owner, Emily!" << endl;
 				getchar();
 				cout << "It takes a moment to sink in, but you're flooded with relief. " << endl
 					 << "It was all just a dream. Luckily, it is a nightmare, thank goodness. " << endl
