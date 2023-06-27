@@ -18,18 +18,18 @@ Feline: Far from Home is an exciting text-based novel game where you play as a l
    - Be mindful of the kitten's happiness level. Positive actions and choices can increase its happiness.
    - If the kitten loses all its lives, the game will end.
 
-6. Items and Inventory:
+5. Items and Inventory:
    - Throughout the game, you can acquire various items such as coins, food, and cards.
    - These items may be useful in specific situations or can be used to interact with characters or the environment.
    - Manage your inventory wisely and use items strategically to progress in the story.
 
-7. Save and Load:
+6. Save and Load:
    - The progress will be automatically saved when you finish a chapter or you choose to quit the game. 
    - You can load your previous progress in the main menu. 
 
-8. Quitting the Game:
+7. Quitting the Game:
    - If you wish to exit the game, choose the "Quit" option from the main menu or after each chapter.
 
-10. Multiple ending:
+8. Multiple ending:
     - There are multiple story paths and endings in the game.
     - Feel free to experiment with different choices and explore different outcomes.
