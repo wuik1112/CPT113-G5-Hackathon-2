@@ -18,21 +18,18 @@ Drawing inspiration from the real-life story of Oyen, the cherished orange cat o
 
 Join us in this immersive adventure, where the loyalty of a cat shines bright, and the profound love between humans and their feline friends is celebrated in all its glory.
 
-
 ### Features of our game
-**Engaging Text-Based Adventure:** Experience an immersive journey through captivating text and interactive storytelling.
+Engaging Text-Based Adventure: Experience an immersive journey through captivating text and interactive storytelling.
 
-**Emotional Decision-Making:** Shape the cat's fate through your choices, reflecting its loyalty and love for its human.
+Emotional Decision-Making: Shape the cat's fate through your choices, reflecting its loyalty and love for its human.
 
-**Diverse Encounters:** Meet unique characters and animals, forging meaningful connections along the way.
+Diverse Encounters: Meet unique characters and animals, forging meaningful connections along the way.
 
-**Heartwarming Narrative:** Explore the deep bond between cats and humans as the cat overcomes challenges to find its human.
+Heartwarming Narrative: Explore the deep bond between cats and humans as the cat overcomes challenges to find its human.
 
-**Character Progression:** Witness the cat's growth, unlocking abilities and deepening relationships.
+Character Progression: Witness the cat's growth, unlocking abilities and deepening relationships.
 
-**Multiple Endings:** Your choices shape the outcome, offering replayability and exploration.
-
-
+Multiple Endings: Your choices shape the outcome, offering replayability and exploration.
 
 ### How to play our game
 
