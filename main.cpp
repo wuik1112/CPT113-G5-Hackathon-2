@@ -78,16 +78,18 @@ int main()
 		{
 			ifstream inputFile("Gameplay.txt");
     
-    	if (inputFile.is_open()) {
-        string line;
-        while (getline(inputFile, line))
+    			if (inputFile.is_open()) 
+			{
+        			string line;
+        			while (getline(inputFile, line))
 				{
-            cout << line << endl;
-        }
-        inputFile.close();
-    	} else {
-        cout << "Unable to open the gameplay file." << endl;
-    	}
+            				cout << line << endl;
+        			}
+        		inputFile.close();
+    			} else 
+			{
+        			cout << "Unable to open the gameplay file." << endl;
+    			}
 			getchar();
 			cout << "Returning to Main Menu...\n";
 			game.backToMainMenu();
