@@ -1,4 +1,4 @@
-How to Play Feline: Far from Home
+## How to Play Feline: Far from Home
 
 1. Introduction:
 Feline: Far from Home is an exciting text-based novel game where you play as a lost kitten on a journey to reunite with its owner. Your decisions and actions will determine the outcome of the story. Follow the instructions below to navigate through the game and make choices that will impact the kitten's fate.
@@ -31,6 +31,5 @@ Feline: Far from Home is an exciting text-based novel game where you play as a l
    - If you wish to exit the game, choose the "Quit" option from the main menu or after each chapter.
 
 10. Multiple ending:
-    - Remember, there are multiple story paths and endings in the game.
+    - There are multiple story paths and endings in the game.
     - Feel free to experiment with different choices and explore different outcomes.
-    - Enjoy the replayability and discover new aspects of the story with each playthrough.
