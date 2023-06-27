@@ -1,3 +1,5 @@
+%%writefile Script.cpp
+
 #include <iostream>
 #include "Player.h"
 #include "Script.h"
@@ -20,6 +22,8 @@ Script::~Script()
 	setEnding(0);
 }
 
+
+
 // Ending type
 void Script::setEnding(int end)
 {
@@ -31,6 +35,8 @@ int Script::getEnding()
 	return ending;
 }
 
+
+
 // Current Chapter
 void Script::setCurrentChapter(int currentChp)
 {
@@ -41,6 +47,8 @@ int Script::getCurrentChapter()
 {
 	return currentChapter;
 }
+
+
 
 void Script::day1()
 {
@@ -328,6 +336,7 @@ void Script::day2()
 	day3();
 }
 
+
 void Script::day3()
 {
 	setCurrentChapter(3);
@@ -484,6 +493,7 @@ void Script::day4()
 	day5();
 }
 
+
 void Script::day5()
 {
 	setCurrentChapter(5);
@@ -545,6 +555,8 @@ void Script::day5()
 	ending2();
 }
 
+
+
 // display the endings depends on player choice
 void Script::ending1()
 {
@@ -569,7 +581,6 @@ void Script::ending1()
 
 	game->quitGame();
 }
-
 
 // Ending 2: Found out Emily die of suicide at bathroom
 void Script::ending2()
