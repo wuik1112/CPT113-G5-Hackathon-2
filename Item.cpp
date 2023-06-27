@@ -3,6 +3,7 @@
 
 using namespace std;
 
+// Constructor to initialize the stackTop and number of items into null
 Item::Item()
 {
     coinTop = nullptr;
@@ -12,7 +13,7 @@ Item::Item()
     cardCount = 0;
     foodCount = 0;
 }
-
+// Destructor
 Item::~Item()
 {
     ItemNode* tempCoin;
