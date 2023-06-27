@@ -19,24 +19,38 @@ Drawing inspiration from the real-life story of Oyen, the cherished orange cat o
 Join us in this immersive adventure, where the loyalty of a cat shines bright, and the profound love between humans and their feline friends is celebrated in all its glory.
 
 ### Features of our game
-Engaging Text-Based Adventure: Experience an immersive journey through captivating text and interactive storytelling.
+_Engaging Text-Based Adventure:_ Experience an immersive journey through captivating text and interactive storytelling.
 
-Emotional Decision-Making: Shape the cat's fate through your choices, reflecting its loyalty and love for its human.
+_Emotional Decision-Making:_ Shape the cat's fate through your choices, reflecting its loyalty and love for its human.
 
-Diverse Encounters: Meet unique characters and animals, forging meaningful connections along the way.
+_Diverse Encounters:_ Meet unique characters and animals, forging meaningful connections along the way.
 
-Heartwarming Narrative: Explore the deep bond between cats and humans as the cat overcomes challenges to find its human.
+_Heartwarming Narrative:_ Explore the deep bond between cats and humans as the cat overcomes challenges to find its human.
 
-Character Progression: Witness the cat's growth, unlocking abilities and deepening relationships.
+_Character Progression:_ Witness the cat's growth, unlocking abilities and deepening relationships.
 
-Multiple Endings: Your choices shape the outcome, offering replayability and exploration.
+_Multiple Endings:_ Your choices shape the outcome, offering replayability and exploration.
 
 ### How to play our game
 
 ### How object-oriented concepts were used to develop our game
 
 ### How linked lists/stacks/queues play a role in our game
+Linked Lists: Each item type (coins, card, and food) is represented as a linked list. A linked list is a data structure that consists of nodes, where each node contains the item and a pointer to the next node in the list.
+
+Stacks: The linked lists are used as stacks to manage the player's items. A stack is a data structure that follows the Last-In-First-Out (LIFO) principle, where the last item added is the first one to be removed.
+
+Item Addition: The functions PushCoin(), PushCard(), and PushFood() add items to their respective stacks. Each function creates a new node for the item and inserts it at the top of the corresponding linked list, representing the top of the stack.
+
+Item Removal: The functions PopCoin(), PopCard(), and PopFood() remove items from the top of their respective stacks. These functions delete the top node from the linked list and update the top pointer to point to the next node, effectively removing the item from the stack.
+
+Count Tracking: The variables coinCount, cardCount, and foodCount keep track of the number of items in each stack. These counts provide information about the current inventory of the player.
+
+Empty Check: The functions isCoinEmpty(), isCardEmpty(), and isFoodEmpty() check if their respective stacks are empty. They examine the count variables and return true if the count is less than or equal to zero, indicating that the stack is empty.
+
+By utilizing linked lists as stacks, the code efficiently manages the player's items for different item types. The stack structure allows for adding items to the top and removing items from the top, following the LIFO principle. The count variables and empty check functions provide information about the availability of items in the stacks.
 
 ### Screenshots of our game
 
 ### A link to our game demo video
+https://youtu.be/dQw4w9WgXcQ // rickroll
