@@ -6,6 +6,7 @@ Khoo Iu Wan
 Loo Jia Xin
 
 Raziqin Husna binti Abdul Wahid
+
 ### Description of our game
 In this hackathon, our mission is to create a captivating text-based video game that explores the unwavering loyalty of a cat towards its human companion and celebrates the profound love shared between humans and cats. Introducing our heartfelt creation: **"Feline: Far From Home."**
 
@@ -16,6 +17,7 @@ Throughout the adventure, the cat will encounter diverse characters and encounte
 Drawing inspiration from the real-life story of Oyen, the cherished orange cat of the Raziqin family, **"Feline: Far From Home"** aims to capture the essence of loyalty and love that exists between humans and their feline companions. Immerse yourself in this heartwarming tale where the bonds of friendship and the strength of unconditional love prevail.
 
 Join us in this immersive adventure, where the loyalty of a cat shines bright, and the profound love between humans and their feline friends is celebrated in all its glory.
+
 
 ### Features of our game
 **Engaging Text-Based Adventure:** Experience an immersive journey through captivating text and interactive storytelling.
@@ -29,6 +31,7 @@ Join us in this immersive adventure, where the loyalty of a cat shines bright, a
 **Character Progression:** Witness the cat's growth, unlocking abilities and deepening relationships.
 
 **Multiple Endings:** Your choices shape the outcome, offering replayability and exploration.
+
 
 
 ### How to play our game
