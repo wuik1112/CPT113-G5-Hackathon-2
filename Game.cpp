@@ -285,6 +285,12 @@ void Game::backToMainMenu()
 		case 3:
 		{
 			//how to play
+			cout << "HOW TO PLAY\n";
+			cout << "------------------\n";
+			cout << "You are paying as a tabby orange cat. You have to make a choice for the cat to survive in an unfamiliar outside world.\n";
+			cout << "Remember, all choices and steps you make, there will be consequences.\n";
+			cout << "Choose wisely.\n";
+			backToMainMenu();
 			break;
 		}
 		case 4:
