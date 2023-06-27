@@ -290,7 +290,7 @@ void Game::backToMainMenu()
 			cout << "You are paying as a tabby orange cat. You have to make a choice for the cat to survive in an unfamiliar outside world.\n";
 			cout << "Remember, all choices and steps you make, there will be consequences.\n";
 			cout << "Choose wisely.\n";
-			cout << "Press any key to back to main menu.\n";
+			cout << "Press ENTER to back to main menu.\n";
 			getchar();
 			backToMainMenu();
 			break;
