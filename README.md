@@ -34,6 +34,31 @@ _Multiple Endings:_ Your choices shape the outcome, offering replayability and e
 ### How to play our game
 
 ### How object-oriented concepts were used to develop our game
+**Encapsulation:**
+
+Encapsulation is demonstrated by the classes, such as Player, Item, Script, and Game.
+Each class encapsulates its own data and provides public methods to interact with that data. For example, the Player class encapsulates the player's name, lives, and happiness, and provides getter and setter methods to access and modify these attributes.
+Encapsulation helps protect the internal state of objects and ensures that data manipulation is performed through controlled access points, improving data integrity and code maintainability.
+
+**Abstraction:**
+
+Abstraction is achieved by using classes to abstract away the implementation details and expose simplified interfaces.
+The Game class abstracts the game's functionality by providing high-level methods like startGame(), saveProgress(), loadProgress(), and quitGame(). These methods hide the underlying complexities of game management and provide a simplified interface for other parts of the program.
+Abstraction allows other classes and modules to interact with the Game object without needing to understand its internal workings, promoting code modularity and reducing dependencies.
+
+**Association:**
+
+Association is established through the relationships between classes, enabling them to collaborate and share information.
+The Game class has associations with the Player, Item, and Script classes. It holds instances of these classes as member variables to access their functionalities.
+For example, the Game class interacts with the Player object to retrieve and modify player-related data, such as the player's name, lives, and happiness. It also utilizes the Item object to manage the game items and the Script object to progress through the game's storyline.
+Associations facilitate communication and data sharing between classes, allowing them to work together to achieve the game's functionality.
+
+**Composition:**
+
+The Game class composes instances of the Player, Item, and Script classes as member variables.
+For example, the Game object is composed of a Player object to represent the game's player, an Item object to manage the game items, and a Script object to control the game's storyline.
+Composition allows the Game object to combine and coordinate the functionalities provided by these composed objects to implement the overall game logic.
+These object-oriented concepts promote code organization, modularization, and reusability. They help structure the code in a logical and maintainable manner, encapsulating related data and behaviors, abstracting away complexities, establishing relationships between classes, and composing objects to build more complex systems.
 
 ### How linked lists/stacks/queues play a role in our game
 Linked Lists: Each item type (coins, card, and food) is represented as a linked list. A linked list is a data structure that consists of nodes, where each node contains the item and a pointer to the next node in the list.
