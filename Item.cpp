@@ -1,231 +1,171 @@
-#include<iostream>
-#include<Item.h>
+#include <iostream>
+#include "Item.h"
+
 using namespace std;
 
 Item::Item()
 {
-	//set initial state
-	coinTop = nullptr;
-	cardTop = nullptr;
-	foodTop = nullptr;
-	coinCount = 0;
-	cardCount = 0;
-	foodCount = 0;
-	
+    coinTop = nullptr;
+    cardTop = nullptr;
+    foodTop = nullptr;
+    coinCount = 0;
+    cardCount = 0;
+    foodCount = 0;
 }
 
 Item::~Item()
 {
-	//remove content of each stacks one by one
-	Coin *tempCoin;
-	Card *tempCard;
-	Food *tempFood;
-	
-	//coin
-	while(coinTop != nullptr)
-	{
-		tempCoin = coinTop;
-		coinTop = coinTop->nextCoin;
-		delete tempCoin;
-	}
-	
-	//card
-	while(cardTop != nullptr)
-	{
-		tempCard = cardTop;
-		cardTop = cardTop->nextCard;
-		delete tempCard;
-	}
-	
-	//food
-	while(foodTop != nullptr)
-	{
-		tempFood = foodTop;
-		foodTop = foodTop->nextFood;
-		delete tempFood;
-	}
-	
+    ItemNode* tempCoin;
+    ItemNode* tempCard;
+    ItemNode* tempFood;
+
+    while (coinTop != nullptr)
+    {
+        tempCoin = coinTop;
+        coinTop = coinTop->nextItem;
+        delete tempCoin;
+    }
+
+    while (cardTop != nullptr)
+    {
+        tempCard = cardTop;
+        cardTop = cardTop->nextItem;
+        delete tempCard;
+    }
+
+    while (foodTop != nullptr)
+    {
+        tempFood = foodTop;
+        foodTop = foodTop->nextItem;
+        delete tempFood;
+    }
 }
 
-int getCoinCount()
+int Item::getCoinCount()
 {
-	return coinCount;
+    return coinCount;
 }
 
-int getCardCount()
+int Item::getCardCount()
 {
-	return cardCount;
+    return cardCount;
 }
 
-int getFoodCount()
+int Item::getFoodCount()
 {
-	return foodCount;
+    return foodCount;
 }
 
 void Item::PushCoin()
 {
-	//if player receive a coin
-	Coin *newCoin = nullptr;
-	
-	newCoin = new Coin;
-	
-	if(isEmpty())
-	{
-		coinTop = newCoin;
-		newCoin->nextCoin = nullptr;
-	}
-	else
-	{
-		newCoin->nextCoin = coinTop;
-		coinTop = newCoin;
-	}
-	
-	coinCount++;
+    ItemNode* newCoin = new ItemNode;
+
+    if (isCoinEmpty())
+    {
+        coinTop = newCoin;
+        newCoin->nextItem = nullptr;
+    }
+    else
+    {
+        newCoin->nextItem = coinTop;
+        coinTop = newCoin;
+    }
+
+    coinCount++;
 }
 
 void Item::PushCard()
-{	
-	//if player receive a business card
-	Card *newCard = nullptr;
-	
-	newCard = new Card;
-	
-	if(isEmpty())
-	{
-		cardTop = newCard;
-		newCard->nextCard = nullptr;
-	}
-	else
-	{
-		newCard->nextCard = cardTop;
-		cardTop = newCard;
-	}
-	
-	cardCount++;
+{
+    ItemNode* newCard = new ItemNode;
+
+    if (isCardEmpty())
+    {
+        cardTop = newCard;
+        newCard->nextItem = nullptr;
+    }
+    else
+    {
+        newCard->nextItem = cardTop;
+        cardTop = newCard;
+    }
+
+    cardCount++;
 }
 
 void Item::PushFood()
 {
-	//if player receive food
-	Food *newFood = nullptr;
-	
-	newFood = new Food;
-	
-	if(isEmpty())
-	{
-		foodTop = newFood;
-		newFood->nextFood = nullptr;
-	}
-	else
-	{
-		newFood->nextFood = foodTop;
-		foodTop = newFood;
-	}
-	
-	foodCount++;
+    ItemNode* newFood = new ItemNode;
+
+    if (isFoodEmpty())
+    {
+        foodTop = newFood;
+        newFood->nextItem = nullptr;
+    }
+    else
+    {
+        newFood->nextItem = foodTop;
+        foodTop = newFood;
+    }
+
+    foodCount++;
 }
 
 void Item::PopCoin()
 {
-	//remove coin from player's inventory
-	Coin *coinTemp = nullptr;
-	
-	if(isEmpty())
-	{
-		cout << "You have no coin in possession.\n";
-	}
-	else
-	{
-		coinTemp = coinTop->nextCoin;
-		delete coinTop;
-		coinTop = coinTemp;
-		
-		coinCount--;
-	}
+    if (isCoinEmpty())
+    {
+        cout << "You have no coin in possession.\n";
+    }
+    else
+    {
+        ItemNode* coinTemp = coinTop;
+        coinTop = coinTop->nextItem;
+        delete coinTemp;
+        coinCount--;
+    }
 }
 
 void Item::PopCard()
 {
-	//remove card from player's inventory
-	Card *cardTemp = nullptr;
-	
-	if(isEmpty())
-	{
-		cout << "You have no card in possession.\n";
-	}
-	else
-	{
-		cardTemp = cardTop->nextCard;
-		delete cardTop;
-		cardTop = cardTemp;
-		
-		cardCount--;
-	}
+    if (isCardEmpty())
+    {
+        cout << "You have no card in possession.\n";
+    }
+    else
+    {
+        ItemNode* cardTemp = cardTop;
+        cardTop = cardTop->nextItem;
+				delete cardTemp;
+				cardCount--;
+		}
 }
 
 void Item::PopFood()
 {
-	//remove food from player's inventory
-	Food *foodTemp = nullptr;
-	
-	if(isEmpty())
-	{
-		cout << "You have no food in possession.\n";
-	}
-	else
-	{
-		foodTemp = foodTop->nextFood;
-		delete foodTop;
-		foodTop = foodTemp;
-		
-		foodCount--;
-	}
+    if (isFoodEmpty())
+    {
+        cout << "You have no food in possession.\n";
+    }
+    else
+    {
+        ItemNode* foodTemp = foodTop;
+        foodTop = foodTop->nextItem;
+        delete foodTemp;
+        foodCount--;
+    }
 }
 
 bool Item::isCoinEmpty()
 {
-	bool status;
-	
-	if(coinCount <= 0)
-	{
-		status = true;
-		return status;
-	}
-	else
-	{
-		status = false;
-		return status;
-	}
+    return coinCount <= 0;
 }
 
 bool Item::isCardEmpty()
 {
-	bool status;
-	
-	if(cardCount <= 0)
-	{
-		status = true;
-		return status;
-	}
-	else
-	{
-		status = false;
-		return status;
-	}
+    return cardCount <= 0;
 }
 
 bool Item::isFoodEmpty()
 {
-	bool status;
-	
-	if(foodCount <= 0)
-	{
-		status = true;
-		return status;
-	}
-	else
-	{
-		status = false;
-		return status;
-	}
+    return foodCount <= 0;
 }
