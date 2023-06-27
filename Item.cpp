@@ -3,7 +3,6 @@
 
 using namespace std;
 
-// Constructor to initialize the stackTop and number of items into null
 Item::Item()
 {
     coinTop = nullptr;
@@ -13,7 +12,7 @@ Item::Item()
     cardCount = 0;
     foodCount = 0;
 }
-// Destructor
+
 Item::~Item()
 {
     ItemNode* tempCoin;
@@ -42,6 +41,8 @@ Item::~Item()
     }
 }
 
+
+
 int Item::getCoinCount()
 {
     return coinCount;
@@ -56,6 +57,8 @@ int Item::getFoodCount()
 {
     return foodCount;
 }
+
+
 
 void Item::PushCoin()
 {
@@ -111,6 +114,8 @@ void Item::PushFood()
     foodCount++;
 }
 
+
+
 void Item::PopCoin()
 {
     if (isCoinEmpty())
@@ -136,9 +141,9 @@ void Item::PopCard()
     {
         ItemNode* cardTemp = cardTop;
         cardTop = cardTop->nextItem;
-				delete cardTemp;
-				cardCount--;
-		}
+	delete cardTemp;
+	cardCount--;
+    }
 }
 
 void Item::PopFood()
@@ -155,6 +160,8 @@ void Item::PopFood()
         foodCount--;
     }
 }
+
+
 
 bool Item::isCoinEmpty()
 {
