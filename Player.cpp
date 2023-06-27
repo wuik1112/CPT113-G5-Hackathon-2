@@ -64,11 +64,12 @@ void Player::setHappiness(int happy)
 {
 	countHappiness = happy;
 }
-
+// return the value of happiness
 int Player::getHappiness()
 {
 	return countHappiness;
 }
+// increase value of happiness if player make a choice that make the cat happy
 void Player::addHappiness(int num)
 {
 	countHappiness = countHappiness + num;
