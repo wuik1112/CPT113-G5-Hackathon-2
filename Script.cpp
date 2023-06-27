@@ -2,6 +2,7 @@
 #include "Player.h"
 #include "Script.h"
 #include "Game.h"
+#include "Item.h"
 
 using namespace std;
 
@@ -22,7 +23,7 @@ Script::~Script()
 // Ending type
 void Script::setEnding(int end)
 {
-	ending = new int(end);
+	ending = end;
 }
 
 int Script::getEnding()
@@ -33,7 +34,7 @@ int Script::getEnding()
 // Current Chapter
 void Script::setCurrentChapter(int currentChp)
 {
-	currentChapter = new int(currentChp);
+	currentChapter = currentChp;
 }
 
 int Script::getCurrentChapter()
@@ -86,7 +87,7 @@ void Script::day1()
 			cin >> num;
 		}
     if(num == 1) {
-    	coin.PushCoin();
+    	item.PushCoin();
 	cout << "Despite being a cat, you take the coin anyways.\n";
 	cout << "It might be useful later hehe.\n";
 	cout << "Coin+1\n";
@@ -111,7 +112,7 @@ void Script::day1()
 			cin >> num;
 		}
     if(num == 1) {
-    	coin.PopCoin();
+    	item.PopCoin();
 	cout << "Coin-1\n";
 	cout << "He is delighted to see a feline present him with a glimmering coin. The warmth of his gentle hand patting you\n";
 	cout << "fills your heart with sheer happiness.\n";
@@ -120,7 +121,7 @@ void Script::day1()
 	}
     else
     {
-	  cout << "You experience the enchanting embrace of nostalgia as the music gracefully enters your ears.\n";  
+	  cout << "You experience the enchanting embrace of nostalgia as the music gracefully enters your ears.\n";
     }
 	getchar();
 	cout << "You run around and see a strange alleyway. You enter the alleyway in hope to find shelter for the night and maybe some more food.\n";
@@ -176,7 +177,7 @@ void Script::day1()
     	cout << "Food+1\n";
 	cout << "You brush aside the lingering unease you feel about the man and accept his food offering. Rationalizing that he is likely a compassionate young\n";
 	cout << "individual who genuinely cares for vulnerable animals, you hope that your initial misgivings were unfounded and that his intentions are indeed pure.\n";
-	food.PushFood();
+	item.PushFood();
 	}
     else
     {
@@ -197,8 +198,8 @@ void Script::day1()
 		}
     if(num == 1) {
     	cout << "You decide to share the small, cramped shelter with the black cat, who expresses gratitude for your compassionate action. However, throughout the night,\n";
-	cout << "you endure discomfort, resulting in you losing one life. Lives-1\n";
-	player.deleteLives(1);";
+	cout << "You endure discomfort, resulting in you losing one life. Lives-1\n";
+	player.deleteLives(1);
 	player.checkLives();
 	}
     else
@@ -209,7 +210,7 @@ void Script::day1()
 	getchar();
 
 	// ask if player would like to continue
-	game.continueGame();
+	game->continueGame();
 	// exit program if player choose to exit
 	// call next chapter if the player want to continue
 	day2();
@@ -234,7 +235,7 @@ void Script::day2()
 			cin >> num;
 		}
     if(num == 1) {
-    	coin.PushCoin();
+    	item.PushCoin();
 	cout << "You choose to bring the coin along with you on your little adventure today, recognizing its potential\n";
 	cout << "value and significance in the unfolding journey ahead.\n";
     	cout << "Coin+1\n";
@@ -257,12 +258,13 @@ void Script::day2()
 			cin >> num;
 		}
     if(num == 1) {
-    	coin.PopCoin();
+    	item.PopCoin();
     	cout << "Coin-1\n";
+
 	cout << "Encountering him once more today, his face lights up with sheer delight when he sees you. His happiness intensifies\n";
 	cout << "as you offer him the coin.As a token of his appreciation, he expresses his gratitude by presenting you with food.\n";
 	cout << "Food+1, Happiness+10\n";
-	food.PushFood();
+	item.PushFood();
 	player.addHappiness(10);
 	}
     else
@@ -285,7 +287,7 @@ void Script::day2()
 			cin >> num;
 		}
     if(num == 1) {
-    	food.PushFood();
+    	item.PushFood();
 	cout << "Despite sensing his anger, you decide to pretend not to notice and accept the food, prioritizing\n";
 	cout << "the filling of your hungry stomach for the time being.\n";
     	cout << "Food+1\n";
@@ -293,23 +295,23 @@ void Script::day2()
     else
     {
 	    cout << "No matter what, you cannot shake off the discomfort you feel in the presence of this man, and it only\n";
-	    cout << "intensifies as you witness his worsening temper today. Thus, you hiss at him as a defense mechanism and escape.\n"
+	    cout << "intensifies as you witness his worsening temper today. Thus, you hiss at him as a defense mechanism and escape.\n";
     }
 	getchar();
 	cout << "You go all the way to the strange alley in hope for some update on Emily's whereabout.\n";
 	getchar();
 	cout << "When you enter the alley, the cats look at you and ask you for today's portion of food.\n";
 	getchar();
-	if (food.isFoodEmpty()) {
+	if (item.isFoodEmpty()) {
     		cout << "Oh no! With no food left to offer them, their dissatisfaction becomes evident,\n";
     		cout << "and they decide to inflict punishment upon you. As a consequence,\n";
     		cout << "you tragically lose three lives in the process.\n";
     		player.deleteLives(3);
 		player.checkLives();
 	}
-    
+
     	else {
-    		food.PopFood();
+    		item.PopFood();
 		cout << "Food-1\n";
     		cout << "As you offer them the food, they receive it with great joy and appreciation, their happiness evident in their reactions to your generous gesture.\n";
 	}
@@ -320,7 +322,7 @@ void Script::day2()
 	getchar();
 
 	// ask if player would like to continue
-	game.continueGame();
+	game->continueGame();
 	// exit program if player choose to exit
 	// call next chapter if the player want to continue
 	day3();
@@ -351,7 +353,7 @@ void Script::day3()
 		}
     if(num == 1) {
 	//RAZIQIN STOPPED HERE
-    	food.PushFood();
+    	item.PushFood();
 	cout << "Given his improved mood today, you decide to accept the food graciously, recognizing the opportunity\n";
 	cout << "to satisfy your hunger in a more amicable atmosphere.\n";
 	cout << "Food+1\n";
@@ -367,15 +369,15 @@ void Script::day3()
 	getchar();
 	cout << "As usual, they ask you for today's food.\n";
 	getchar();
-	if (food.isFoodEmpty()) {
+	if (item.isFoodEmpty()) {
     	cout << "They realize that you haven't brought any food as agreed, and their dissatisfaction becomes apparent. You were warned.\n";
     	cout << "Lives-3\n";
     	player.deleteLives(3);
 	player.checkLives();
 	}
-    
+
     else {
-    	food.PopFood();
+    	item.PopFood();
 	cout << "Food-1\n";
     	cout << "You offer them the food, and they gratefully accept it, their satisfaction evident in their reactions.\n";
 	cout << "In addition to their contentment, they have some promising news to share with you regarding Emily.\n";
@@ -383,7 +385,7 @@ void Script::day3()
 	getchar();
 	cout << "They give you a card. Card+1, Happiness+15\nYou take it and have a look.\n";
 	player.addHappiness(15);
-	card.PushCard();
+	item.PushCard();
 	getchar();
 	cout << "On the card, there's Emily's face. That's all you understand. You're a cat afterall. You cannot read.\n";
 	getchar();
@@ -391,7 +393,7 @@ void Script::day3()
 	getchar();
 
 	// ask if player would like to continue
-	game.continueGame();
+	game->continueGame();
 	// exit program if player choose to exit
 	// call next chapter if the player want to continue
 	day4();
@@ -412,20 +414,20 @@ void Script::day4()
 			cout << "Please enter your choice: ";
 			cin >> num;
 		}
-		
+
 	if (num == 1) {
-	cout << "You found out the smell coming from a sack. Wait. Isn't this the sack that the strange man thrown away yesterday? There are some liquid dripping from it.\n"
+	cout << "You found out the smell coming from a sack. Wait. Isn't this the sack that the strange man thrown away yesterday? There are some liquid dripping from it.\n";
 	getchar();
-	cout << "You try to open the sack with your mouth and tiny paw.\n"
-	cout << "What you saw shocked you. It's unbelievable. What is happening?\n"
+	cout << "You try to open the sack with your mouth and tiny paw.\n";
+	cout << "What you saw shocked you. It's unbelievable. What is happening?\n";
 	getchar();
-	cout << "Inside the sack is black furs covering in blood. It was... the black cat.\n"
+	cout << "Inside the sack is black furs covering in blood. It was... the black cat.\n";
 	getchar();
-	cout << "All his body parts are cut into pieces. His guts are being pulled out. Why? Why?"
+	cout << "All his body parts are cut into pieces. His guts are being pulled out. Why? Why?\n";
 	getchar();
-	cout << "Is it really? But how? Who killed him? The strange man?\n"
+	cout << "Is it really? But how? Who killed him? The strange man?\n";
 	getchar();
-	cout << "You don't know what to do anymore. Suddenly, you remember the old man. You must go to him... You must seek help.\n"
+	cout << "You don't know what to do anymore. Suddenly, you remember the old man. You must go to him... You must seek help.\n";
 	getchar();
 	cout << "You run toward the sound of music. There you see the old man happily play his instrument.\n";
 	getchar();
@@ -476,7 +478,7 @@ void Script::day4()
 	}
 
 	// ask if player would like to continue
-	game.continueGame();
+	game->continueGame();
 	// exit program if player choose to exit
 	// call next chapter if the player want to continue
 	day5();
@@ -513,7 +515,7 @@ void Script::day5()
 	if (num == 2) {
 		ending3();
 	}
-	card.PopCard();
+	item.PopCard();
 	cout << "He looks at the card and immediately understand. He knows you want to meet the person on the card.\n";
 	getchar();
 	cout << "He carries you all the way to your old home. The more he walks, the familiar the scenery.\n";
@@ -526,15 +528,15 @@ void Script::day5()
 	getchar();
 	cout << "You didn't bother too much because Emily is the type of person who doesn't want to answer the door to unknown person.\n";
 	getchar();
-	cout << "But, you know that there's a window that Emily always left open for you to come in and out whenever you want.\n"; 
+	cout << "But, you know that there's a window that Emily always left open for you to come in and out whenever you want.\n";
 	getchar();
-	cout << "You go to the window. Surely enough, the window is open. You get inside and then it is silent.\n"; 
+	cout << "You go to the window. Surely enough, the window is open. You get inside and then it is silent.\n";
 	getchar();
 	cout << "Too silent... You walk around the house to find Emily. You go to the living room and see a paper on the table.\n";
 	getchar();
 	cout << "Since you are a cat and no idea about what is written, the old man read it to you.\n";
 	getchar();
-	cout << "What is written on the paper:\n"; 
+	cout << "What is written on the paper:\n";
 	cout << "Dear mom, dad or anyone who read this. I am sorry for everything. I try my best but I keep failing.\n";
 	cout << "Maybe what you said is true. I am such a failure of a child. Please forget about me.\n";
 	getchar();
@@ -547,11 +549,11 @@ void Script::day5()
 void Script::ending1()
 {
 	setEnding(1);
-	
+
 	cout << "You have been adopted by the old man. " << endl;
 	cout << "The old man treats you very well, providing you with food, shelter, and gentle caresses. ";
 	getchar();
-	cout << "However, deep inside your heart, there still resides that one person, and you wonder where she could be.
+	cout << "However, deep inside your heart, there still resides that one person, and you wonder where she could be.";
 	cout << "You think about whether there is a chance in your lifetime to find her. " << endl;
 	cout << "You still spend your time outside trying to gather information about her, but so far, you always come back with empty-handed. ";
 	getchar();
@@ -561,11 +563,11 @@ void Script::ending1()
 	getchar();
 	cout << "You closed your eyes and lose your breath. ";
 	getchar();
-	
+
 	// check if there is a secret ending
 	secretEnding();
-	
-	game.quitGame();
+
+	game->quitGame();
 }
 
 
@@ -573,7 +575,7 @@ void Script::ending1()
 void Script::ending2()
 {
 	setEnding(2);
-	
+
 	cout << "When you enter the bathroom, you see Emily lying on the floor. ";
 	getchar();
 	cout << "Why is she sleeping here? ";
@@ -598,24 +600,24 @@ void Script::ending2()
 	getchar();
 	cout << "No way. ";
 	getchar();
-	cout << "You stay by her side. You love her too much. You want to be loyal to her and only her. " << endl 
+	cout << "You stay by her side. You love her too much. You want to be loyal to her and only her. " << endl
 		 << "You  stay there. With nothing to eat or drink. " << endl;
 	getchar();
 	cout << "Days and weeks pass by. You feel your body weakened. You no longer can get up and walk. " << endl
 		 << "You feel your eyes are getting heavier and heavier before you finally close your eyes and never open them again. " << endl;
 	getchar();
-	
+
 	// check if there is a secret ending
 	secretEnding();
-	
-	game.quitGame();
+
+	game->quitGame();
 }
 
 // Ending 3: Stray Cat
 void Script::ending3()
 {
 	setEnding(3);
-	
+
 	cout << "You choose to live as a stray and not trusting or giving your loyalty to human as easily as before. ";
 	getchar();
 	cout << "You live your days alone in the alley. You slowly grow more and more sick. " << endl;
@@ -623,11 +625,11 @@ void Script::ending3()
 	getchar();
 	cout << "You finally breath your final breath after a year as the sickness worsen... ";
 	getchar();
-	
+
 	// check if there is a secret ending
 	secretEnding();
-	
-	game.quitGame(); 
+
+	game->quitGame();
 }
 
 // if happiness > X, this ending will happen
@@ -637,7 +639,7 @@ void Script::secretEnding()
 	if (player.getHappiness() < MAX_HAPPINESS)
 	{
 		// switch case to determine normal ending for different ending
-		switch (Script.getEnding())
+		switch (ending)
 		{
 			// END1
 			case 1:
@@ -662,9 +664,10 @@ void Script::secretEnding()
 	else if (player.getHappiness() >= MAX_HAPPINESS)
 	{
 		// switch case to determine secret ending for different ending
-		switch (Script.getEnding())
+		switch (ending)
 		{	// secret ending for END1 or END3 if the player happiness is achieved
-			case 1 || case 3:
+			case 1:
+      case 3:
 			{
 				cout << "You find yourself in a darkened world, but a distant light catches your eye. " << endl
 					 << "Intrigued, you move towards it, and it gradually engulfs the darkness, revealing a serene sight. " << endl
@@ -682,7 +685,7 @@ void Script::secretEnding()
 				getchar();
 				cout << "Overwhelmed, you embrace each other tightly, immersed in a moment filled with love and reunion. ";
 				getchar();
-				
+
 				cout << "Congratulation! You have successfully achieved Secret Ending 1! " << endl ;
 				cout << "*** SECRET END1: Heaven? ***" << endl;
 			}
@@ -696,7 +699,7 @@ void Script::secretEnding()
 				getchar();
 				cout << "Is this heaven? ";
 				getchar();
-				cout << "You look around, the room layout is so familiar. "
+				cout << "You look around, the room layout is so familiar.\n";
 				cout << "You find a person standing right in front of you. ";
 				getchar();
 				cout << "You just cannot believe your eyes! Here she is, your owner, Emily!";
@@ -707,7 +710,7 @@ void Script::secretEnding()
 					 << "However, that dream had you clinging to Emily, afraid of what could happen if it came true. " << endl
 					 << "Now, you're determined. You'll be by her side through it all, no matter the challenges. " << endl;
 				getchar();
-				
+
 				cout << "Congratulation! You have successfully achieved Secret Ending 2! " << endl ;
 				cout << "*** SECRET END2: A Nightmare ***" << endl;
 			}
@@ -719,4 +722,3 @@ void Script::secretEnding()
 		}
 	}
 }
-
