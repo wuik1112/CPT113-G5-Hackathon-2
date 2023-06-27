@@ -1,3 +1,5 @@
+%%writefile Game.cpp
+
 #include <iostream>
 #include <fstream> // multiple file inclusion
 #include <string>
@@ -5,6 +7,8 @@
 #include "Player.h"
 #include "Script.h"
 #include "Item.h"
+
+using namespace std;
 
 //Constructor
 Game::Game()
@@ -285,13 +289,20 @@ void Game::backToMainMenu()
 		case 3:
 		{
 			//how to play
-			cout << "HOW TO PLAY\n";
-			cout << "------------------\n";
-			cout << "You are paying as a tabby orange cat. You have to make a choice for the cat to survive in an unfamiliar outside world.\n";
-			cout << "Remember, all choices and steps you make, there will be consequences.\n";
-			cout << "Choose wisely.\n";
-			cout << "Press ENTER to back to main menu.\n";
+			ifstream inputFile("Gameplay.txt");
+    
+    	if (inputFile.is_open()) {
+     	string line;
+      	while (getline(inputFile, line))
+				{
+          cout << line << endl;
+        }
+      	inputFile.close();
+    	} else {
+      	cout << "Unable to open the gameplay file." << endl;
+    	}
 			getchar();
+			cout << "Returning to Main Menu...\n";
 			backToMainMenu();
 			break;
 		}
