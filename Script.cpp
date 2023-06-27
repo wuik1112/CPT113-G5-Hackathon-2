@@ -1,5 +1,3 @@
-%%writefile Script.cpp
-
 #include <iostream>
 #include "Player.h"
 #include "Script.h"
