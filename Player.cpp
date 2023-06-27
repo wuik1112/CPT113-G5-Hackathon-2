@@ -1,6 +1,7 @@
 #include <iostream>
 #include<string>
 #include "Player.h"
+#include "Game.h"
 
 using namespace std;
 
@@ -54,12 +55,10 @@ int Player::getHappiness()
 // call if player lives less than and equal to 0
 void Player::checkLives()
 {
-	if (countLives > 0)
-		return;
-	else if (countLives <= 0)
+	if (countLives <= 0)
 	{
 		cout << "Unfortunately, you have exhausted all of your lives." << endl;
 		cout << "Your journey ends here...Game Over. "<<endl;
-		game.quitGame();
+		game->quitGame();
 	}
 }
