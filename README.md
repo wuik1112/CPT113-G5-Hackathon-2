@@ -142,7 +142,7 @@ Continue to next chapter
 ![image](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/2a101ffb-680f-4b12-84dd-1b6143ac891c)
 
 Back to Main Menu after one chapter
-![image](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/e0c15c25-9289-40d5-b244-5cfb8921fb90)
+![image](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/2bbc5dc9-e7f5-464b-b1af-37087892f76e)
 
 ### A link to our game demo video
 https://youtu.be/dQw4w9WgXcQ // rickroll
