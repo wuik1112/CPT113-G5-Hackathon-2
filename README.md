@@ -118,31 +118,32 @@ By utilizing linked lists as stacks, the code efficiently manages the player's i
 
 ### Screenshots of our game
 Main Menu
-![image](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/f2317140-c1c0-4a59-9e3b-bcb56c673509)
+![屏幕截图 2023-06-28 103524](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/7b076b04-8a46-43a1-a351-6d78e2477cdc)
 
 Start Game
-![image](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/29df129c-cd09-4816-989a-f015747205f7)
+![屏幕截图 2023-06-28 103619](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/0ed1eea9-9099-4b4d-a8d4-d321680a5d66)
 
 Continue Progress
-![image](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/f402cbf8-52ce-4155-a89e-77376eee6b82)
+![屏幕截图 2023-06-28 103700](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/9a6409d7-2574-4071-af65-51d633ac6348)
 
 How to Play
-![image](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/07de2897-22c0-4ad3-b7fa-65fc315c3ad7)
+![屏幕截图 2023-06-28 103813](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/0cf45003-d8b0-4520-b385-f674d0920bdb)
 
 Credits
-![image](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/29abc489-37bf-4c88-8edd-6ff3595f9d88)
+![屏幕截图 2023-06-28 103925](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/82da32f9-c7d8-4ceb-bdb7-3e7bb0737902)
 
 Quit Game
-![image](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/30e51d2c-9ad2-4fc1-a91f-a3d0393a6c75)
+![屏幕截图 2023-06-28 103843](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/b922799a-b777-495c-be1b-0093046fcd85)
 
 Make Choice
-![image](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/d79b0e67-3ef4-4b31-89ba-41717c1db4e8)
+![屏幕截图 2023-06-28 104052](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/69c480e3-3b08-40a5-905d-1716d1eb9cc6)
 
 Continue to next chapter 
-![image](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/2a101ffb-680f-4b12-84dd-1b6143ac891c)
+![屏幕截图 2023-06-28 105502](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/4ba52111-811b-4e74-87ad-9992b12f7065)
 
 Back to Main Menu after one chapter
-![image](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/2bbc5dc9-e7f5-464b-b1af-37087892f76e)
+![屏幕截图 2023-06-28 105544](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/fdd9f488-08b0-4294-9ae6-99ffb41dc92a)
+
 
 ### A link to our game demo video
 https://youtu.be/sOfs3GsRH3U
