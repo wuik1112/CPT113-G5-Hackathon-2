@@ -26,21 +26,21 @@ void Game::startGame()
 {
 	string name;
 
-	cout << "Welcome to our game, \"Feline: Far From Home\". " << endl;
+	cout << endl << "Welcome to our game, \"Feline: Far From Home\". " << endl;
 	getchar();
 	cout << "This is a story about a kitten lost its owner." << endl
-	     << "You need to make decision for each condition to help the kitten reunites with its owner. " << endl;
+	     << "You need to make decision for each condition to help the kitten reunites with its owner. " << endl << endl;
 
 	cout << "Please give a name for this kitten: ";
 	getline(cin, name);
 	player.setName(name);
 
-	cout << "Now, you are the kitten, " << player.getName() << ". " << endl;
+	cout << "Now, you are the kitten, " << player.getName() << ". " << endl << endl;
 	cout << "Here are your current information: " << endl;
 	cout << "Your Lives: " << player.getLives() << endl;
 	cout << "Your Happiness: " << player.getHappiness() << endl;
 	getchar();
-	cout << "Enjoy your journey! " << endl << endl;
+	cout << "Enjoy your journey! " << endl;
 
 	saveProgress();
 
@@ -55,7 +55,8 @@ void Game::saveProgress()
 	// open the text file to write in
 	ofstream outFile("progress.txt");
 
-	if (outFile.is_open()) {
+	if (outFile.is_open())
+	{
 		// write the player info into the file
 		outFile << player.getName() << endl;
 		outFile << player.getLives() << endl;
@@ -65,15 +66,16 @@ void Game::saveProgress()
 		outFile << item.getFoodCount() << endl;
 		outFile << item.getCardCount() << endl;
 		// write the current chapter to text file
-    	outFile << script.getCurrentChapter() << endl;
+    		outFile << script.getCurrentChapter() << endl;
 
 		outFile.close();  // Close the text file
 
 		cout << endl << "Progress saved successfully! " << endl;
 
-	} else {
+	} else 
+	{
         cout << endl << "Failed to save the progress." << endl;
-    }
+    	}
 }
 
 // Load progress from text file
@@ -129,7 +131,8 @@ void Game::loadProgress()
 		i++;
 		}
 		inFile.close();
-	} else {
+	} else 
+	{
 		cout << "Failed to load the progress." << endl;
 	}
 
@@ -166,12 +169,12 @@ void Game::deleteProgress()
 	ofstream deleteFile("progress.txt", ofstream::out | ofstream::trunc);
 
 	if (deleteFile.is_open())
-     {
+     	{
         deleteFile.close();
 	    	cout << "Progress deleted. " << endl;
-     } else
+     	} else
      		cout << "Failed to delete the progress. " << endl;
- }
+}
 
 
 
@@ -288,16 +291,17 @@ void Game::backToMainMenu()
 			//how to play
 			ifstream inputFile("Gameplay.txt");
 
-    	if (inputFile.is_open()) {
-     	string line;
-      	while (getline(inputFile, line))
+    			if (inputFile.is_open())
+			{
+     				string line;
+      				while (getline(inputFile, line))
 				{
-          cout << line << endl;
-        }
-      	inputFile.close();
-    	} else {
-      	cout << "Unable to open the gameplay file." << endl;
-    	}
+          			cout << line << endl;
+        			}
+      			inputFile.close();
+    			} else {
+      			cout << "Unable to open the gameplay file." << endl;
+    			}
 			getchar();
 			cout << "Returning to Main Menu...\n";
 			backToMainMenu();
@@ -315,16 +319,19 @@ void Game::backToMainMenu()
 			cout << "1. Yes\n2. No\n";
 			cout << "Please enter your choice: ";
 			cin >> num;
-			while (num != 1 && num != 2){
+			while (num != 1 && num != 2)
+			{
 				cout << "Invalid choice.\n";
 				cout << "Please reenter your choice: ";
 				cin >> num;
 			}
-			if (num == 1){
+			if (num == 1)
+			{
 				// function to return to main menu
 				backToMainMenu();
 			}
-			else if (num == 2){
+			else if (num == 2)
+			{
 				quitGame();
 			}
 			break;
