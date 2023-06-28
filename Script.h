@@ -21,7 +21,7 @@ class Script
 		
 		int ending;
 		int currentChapter;
-    int num;
+  	        int num;
 
 	public:
 		// Constructor
