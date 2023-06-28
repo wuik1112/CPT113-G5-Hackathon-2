@@ -1,4 +1,4 @@
-# CPT113 Group 5 Hackathon 2
+![屏幕截图 2023-06-28 115108](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/e8b1678d-7d4b-4a1f-8a63-747da3b4e23b)![屏幕截图 2023-06-28 105805](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/962f6cd9-5fef-4625-aa14-6cbf36299f54)![屏幕截图 2023-06-28 104052](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/cfd9b48e-2b88-41f4-a2cd-a79512f9876a)# CPT113 Group 5 Hackathon 2
 ### Members 
 
 Khoo Iu Wan
@@ -130,20 +130,19 @@ How to Play
 ![屏幕截图 2023-06-28 103813](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/0cf45003-d8b0-4520-b385-f674d0920bdb)
 
 Credits
-![屏幕截图 2023-06-28 103925](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/82da32f9-c7d8-4ceb-bdb7-3e7bb0737902)
+![屏幕截图 2023-06-28 104052](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/1bde12f0-7097-4b9a-baed-ad40c1296a58)
 
 Quit Game
-![屏幕截图 2023-06-28 103843](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/b922799a-b777-495c-be1b-0093046fcd85)
+![屏幕截图 2023-06-28 103925](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/fe3b8955-9f39-40e9-a9c8-72cb3994fd5f)
 
 Make Choice
-![屏幕截图 2023-06-28 104052](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/69c480e3-3b08-40a5-905d-1716d1eb9cc6)
+![屏幕截图 2023-06-28 105502](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/9a1275de-8a4c-4396-9263-e2b24abda2f1)
 
 Continue to next chapter 
-![屏幕截图 2023-06-28 105502](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/4ba52111-811b-4e74-87ad-9992b12f7065)
+![屏幕截图 2023-06-28 105544](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/6759cdde-b429-4dc2-befc-8c138c63ec42)
 
 Back to Main Menu after one chapter
-![屏幕截图 2023-06-28 105544](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/fdd9f488-08b0-4294-9ae6-99ffb41dc92a)
-
+![屏幕截图 2023-06-28 115108](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/04754b09-cd62-4a90-9090-d7d9653c00c5)
 
 ### A link to our game demo video
 https://youtu.be/sOfs3GsRH3U
