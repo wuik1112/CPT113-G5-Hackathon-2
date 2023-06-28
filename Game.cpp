@@ -53,7 +53,9 @@ void Game::startGame()
 void Game::saveProgress()
 {
 	// open the text file to write in
-	ofstream outFile("progress.txt");
+	ofstream outFile;
+	
+	outFile.open("progress.txt");
 
 	if (outFile.is_open())
 	{
