@@ -650,18 +650,21 @@ void Script::secretEnding()
 			{
 				cout << "You have successfully achieved Ending 1! " << endl ;
 				cout << "*** END1: Old Man Is Kind, But...You Miss Her ***" << endl;
+				break;
 			}
 			// END2
 			case 2:
 			{
 				cout << "You have successfully achieved Ending 2! " << endl ;
 				cout << "*** END2: You Found Her, Finally ***" << endl;
+				break;
 			}
 			// END3
 			case 3:
 			{
 				cout << "You have successfully achieved Ending 3! " << endl ;
 				cout << "*** END3: New Life As Stray ***" << endl;
+				break;
 			}
 		}
 	} // the value of happiness is maximum, the unique secret ending of different ending is triggered
@@ -692,6 +695,8 @@ void Script::secretEnding()
 
 				cout << "Congratulation! You have successfully achieved Secret Ending 1! " << endl ;
 				cout << "*** SECRET END1: Heaven? ***" << endl;
+				
+				break; 
 			}
 			// secret ending after END2 if player happiness is achieved
 			case 2:
@@ -717,6 +722,8 @@ void Script::secretEnding()
 
 				cout << "Congratulation! You have successfully achieved Secret Ending 2! " << endl ;
 				cout << "*** SECRET END2: A Nightmare ***" << endl;
+				
+				break;
 			}
 			// not showing anything if cannot find the ending
 			default:
