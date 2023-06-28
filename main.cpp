@@ -45,7 +45,8 @@ int main()
 			int choice;
 			// confirmation of player's choice
 			cout << "Do you wish to continue your past progress?\n";
-			cout << "1.Yes\n2.No\n3.delete past progress\n";
+			cout << "1.Yes\n2.No (delete past progress)\n3. Back to main menu\n";
+			cout << "Please enter your choice: ";
 			cin >> choice;
 
 			// input validation
@@ -60,14 +61,14 @@ int main()
 				game.loadProgress();
 			else if(choice == 2)
 			{
-				cout << "Returning to Main Menu...\n";
-				// function to return to main menu
-				game.backToMainMenu();
+				// delete the content in progress.txt
+				game.deleteProgress();
 			}
 			else
 			{
-				// delete the content in progress.txt
-				game.deleteProgress();
+				cout << "Returning to Main Menu...\n";
+				// function to return to main menu
+				game.backToMainMenu();
 			}
 
 			break;
