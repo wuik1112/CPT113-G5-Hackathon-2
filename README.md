@@ -117,6 +117,35 @@ The functions isCoinEmpty(), isCardEmpty(), and isFoodEmpty() check if their res
 By utilizing linked lists as stacks, the code efficiently manages the player's items for different item types. The stack structure allows for adding items to the top and removing items from the top, following the LIFO principle. The count variables and empty check functions provide information about the availability of items in the stacks.
 
 ### Screenshots of our game
+Main Menu
+![image](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/f2317140-c1c0-4a59-9e3b-bcb56c673509)
+
+Start Game
+![image](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/29df129c-cd09-4816-989a-f015747205f7)
+
+Continue Progress
+![image](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/f402cbf8-52ce-4155-a89e-77376eee6b82)
+
+How to Play
+![image](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/07de2897-22c0-4ad3-b7fa-65fc315c3ad7)
+
+Credits
+![image](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/0d043fd2-5260-434c-a459-ab23836990bd)
+
+Quit Game
+![image](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/30e51d2c-9ad2-4fc1-a91f-a3d0393a6c75)
+
+Continue to next chapter
+
+
+Back to Main Menu after one chapter
+
+
+
+
+
+
+
 
 ### A link to our game demo video
 https://youtu.be/dQw4w9WgXcQ // rickroll
