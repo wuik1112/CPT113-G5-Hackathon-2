@@ -130,10 +130,13 @@ How to Play
 ![image](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/07de2897-22c0-4ad3-b7fa-65fc315c3ad7)
 
 Credits
-![image](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/0d043fd2-5260-434c-a459-ab23836990bd)
+![image](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/29abc489-37bf-4c88-8edd-6ff3595f9d88)
 
 Quit Game
 ![image](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/30e51d2c-9ad2-4fc1-a91f-a3d0393a6c75)
+
+Making Decision
+
 
 Continue to next chapter
 
