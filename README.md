@@ -38,7 +38,7 @@ Your choices shape the outcome, offering replayability and exploration.
 
 3. **Continue Game**: When the player selects this option, they are prompted to decide whether they want to continue to the next chapter or quit the game. If they choose to continue, their progress is saved, and the next chapter of the story is displayed. If they choose to quit, the game saves their progress and exits.
 
-4. **Quit Game**: This feature enables the player to exit the game at any time. Before quitting, the game automatically saves the player's progress to ensure they can resume from where they left off.
+4. **Quit Game**: This feature enables the player to exit the game. Before quitting, the game automatically saves the player's progress to ensure they can resume from where they left off.
 
 5. **Save Progress**: The save progress feature allows automatically saving progress in the game. It writes the player's information, including their name, lives, and happiness, as well as the conditions of any items they possess, and the current chapter they are on, to a text file. This way, players can come back to the game and continue their journey at a later time.
 
