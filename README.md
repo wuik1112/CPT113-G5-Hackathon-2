@@ -145,4 +145,4 @@ Back to Main Menu after one chapter
 ![image](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/2bbc5dc9-e7f5-464b-b1af-37087892f76e)
 
 ### A link to our game demo video
-[https://youtu.be/dQw4w9WgXcQ // rickroll](https://youtu.be/sOfs3GsRH3U)https://youtu.be/sOfs3GsRH3U
+https://youtu.be/sOfs3GsRH3U
