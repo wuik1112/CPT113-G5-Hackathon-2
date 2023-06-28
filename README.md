@@ -138,7 +138,7 @@ Quit Game
 Make Choice
 ![image](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/d79b0e67-3ef4-4b31-89ba-41717c1db4e8)
 
-Continue to next chapter
+Continue to next chapter 
 ![image](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/2a101ffb-680f-4b12-84dd-1b6143ac891c)
 
 Back to Main Menu after one chapter
