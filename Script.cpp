@@ -571,7 +571,7 @@ void Script::ending1()
 	secretEnding();
 	// delete progress when the game is end
 	game->deleteProgress();
-	game->quitGame();
+	game->backToMainMenu();
 }
 
 
@@ -614,7 +614,7 @@ void Script::ending2()
 	// check if there is a secret ending
 	secretEnding();
 	game->deleteProgress();
-	game->quitGame();
+	game->backToMainMenu();
 }
 
 // Ending 3: Stray Cat
@@ -633,7 +633,7 @@ void Script::ending3()
 	// check if there is a secret ending
 	secretEnding();
 	game->deleteProgress();
-	game->quitGame();
+	game->backToMainMenu();
 }
 
 // if happiness > X, this ending will happen
