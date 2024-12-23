@@ -1,6 +1,6 @@
 # **Feline: Far From Home**
 
-### **Description**
+![Cover-01](https://github.com/user-attachments/assets/e49e3f6a-1937-4029-b726-ff045635bbf7)
 In this hackathon, we created a captivating text-based adventure that explores the unwavering loyalty of a cat towards its human companion and celebrates the profound love shared between humans and cats. Introducing **"Feline: Far From Home."**
 
 In this game, you play as a devoted little cat left behind by its human. Filled with a deep sense of loyalty and longing, the cat embarks on an extraordinary quest to find its beloved human. As the player, you guide the cat through challenges, encounters, and choices that will determine the cat's fate in its journey to reunite with its human.
