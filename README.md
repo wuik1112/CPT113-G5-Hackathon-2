@@ -3,15 +3,14 @@
 ---
 
 ### **Table of Contents**
-1. [Description](#description)
-2. [Features](#features)
+1. [Features](#features)
    - [Core Gameplay Features](#core-gameplay-features)
-3. [How to Play](#how-to-play)
-4. [Object-Oriented Concepts Used](#object-oriented-concepts-used)
-5. [Data Structures Used](#data-structures-used)
-6. [Contributors](#contributors)
-7. [Screenshots of our game](#screenshots-of-our-game)
-8. [A link to our game demo video](#license)
+2. [How to Play](#how-to-play)
+3. [Object-Oriented Concepts Used](#object-oriented-concepts-used)
+4. [Data Structures Used](#data-structures-used)
+5. [Contributors](#contributors)
+6. [Screenshots of our game](#screenshots-of-our-game)
+7. [A link to our game demo video](#license)
 
 ---
 
