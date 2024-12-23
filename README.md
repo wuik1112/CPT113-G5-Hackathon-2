@@ -1,5 +1,12 @@
 # **Feline: Far From Home**
 
+### **Description**
+In this hackathon, we created a captivating text-based adventure that explores the unwavering loyalty of a cat towards its human companion and celebrates the profound love shared between humans and cats. Introducing **"Feline: Far From Home."**
+
+In this game, you play as a devoted little cat left behind by its human. Filled with a deep sense of loyalty and longing, the cat embarks on an extraordinary quest to find its beloved human. As the player, you guide the cat through challenges, encounters, and choices that will determine the cat's fate in its journey to reunite with its human.
+
+Inspired by the real-life story of Oyen, the cherished orange cat of the Raziqin family, **"Feline: Far From Home"** captures the essence of loyalty and love that exists between humans and their feline companions.
+
 ---
 
 ### **Table of Contents**
@@ -11,15 +18,6 @@
 5. [Contributors](#contributors)
 6. [Screenshots of our game](#screenshots-of-our-game)
 7. [A link to our game demo video](#license)
-
----
-
-### **Description**
-In this hackathon, we created a captivating text-based adventure that explores the unwavering loyalty of a cat towards its human companion and celebrates the profound love shared between humans and cats. Introducing **"Feline: Far From Home."**
-
-In this game, you play as a devoted little cat left behind by its human. Filled with a deep sense of loyalty and longing, the cat embarks on an extraordinary quest to find its beloved human. As the player, you guide the cat through challenges, encounters, and choices that will determine the cat's fate in its journey to reunite with its human.
-
-Inspired by the real-life story of Oyen, the cherished orange cat of the Raziqin family, **"Feline: Far From Home"** captures the essence of loyalty and love that exists between humans and their feline companions.
 
 ---
 
