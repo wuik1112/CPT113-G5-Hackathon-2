@@ -1,5 +1,20 @@
 # **Feline: Far From Home**
 
+---
+
+### **Table of Contents**
+1. [Description](#description)
+2. [Features](#features)
+   - [Core Gameplay Features](#core-gameplay-features)
+3. [How to Play](#how-to-play)
+4. [Object-Oriented Concepts Used](#object-oriented-concepts-used)
+5. [Data Structures Used](#data-structures-used)
+6. [Contributors](#contributors)
+7. [Screenshots of our game](#screenshots-of-our-game)
+8. [A link to our game demo video](#license)
+
+---
+
 ### **Description**
 In this hackathon, we created a captivating text-based adventure that explores the unwavering loyalty of a cat towards its human companion and celebrates the profound love shared between humans and cats. Introducing **"Feline: Far From Home."**
 
@@ -94,6 +109,8 @@ Continue to next chapter
 
 Back to Main Menu after one chapter
 ![屏幕截图 2023-06-28 115108](https://github.com/iuw1112/CPT113-G5-Hackathon-2/assets/119191251/04754b09-cd62-4a90-9090-d7d9653c00c5)
+
+---
 
 ### A link to our game demo video
 https://youtu.be/sOfs3GsRH3U
